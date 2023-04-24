@@ -1,0 +1,57 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="page-header">
+    <h1 class="page-header-title">
+        <% if (newBlogName === "") { %> 
+            My Blog
+        <% } else { %>
+            <%= newBlogName %>
+        <% } %>
+    </h1>
+</div>
+
+
+<!-- /* ===========* 🐱💛( MY BLOG POSTS )💛🐱 *=========== */ -->
+<div class="blog-category">
+
+    <div class="blog-category-header">
+        <h2 class="category-title">My Blog</h1>
+        <!-- <h2 class="category-title">
+            <% if (newBlogName === "") { %> 
+                My Blog
+            <% } else { %>
+                <%= newBlogName %>
+            <% } %>
+        </h1> -->
+        <a href="/new-blog">
+            <!-- <button class="secondary-button"><i class="fa-solid fa-feather-pointed"></i></button> -->
+            <button class="secondary-button">New Blogpost</button>
+        </a>
+    </div>
+
+    <div class="blog-post-list">
+
+        <% if (blogpostPost.length === 0) { %>
+            <div class="blog-post empty-blog">
+                <!-- <img src="images/ablazelilith.webp" class="ablaze-emptyjournals-icon" alt="Ablaze Lilith"> -->
+                <div class="empty-blog-notice">
+                    <div class="empty-blog-notice-content">
+                        <h3 class="blog-post-title"><%= homeContent.title %></h3>
+                        <p class="empty-blog-notice-message"><%= homeContent.content %></p>
+                        <a href="/new-blog">
+                            <button type="submit" class="main-button">Start My Blog</button>
+                            <!-- <button type="submit" class="main-button">New Post &nbsp;<i class="fa-solid fa-feather-pointed"></i></button> -->
+                        </a>
+                    </div>
+                </div>
+                <img src="images/ablazelilith.webp" class="ablaze-emptyjournals-icon" alt="Ablaze Lilith">
+            </div>
+        <% } else { %>
+            <%- include("partials/blog-post.ejs"); %>
+        <% } %>
+
+    </div>
+
+</div>
+
+<%- include("partials/footer.ejs"); %>

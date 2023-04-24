@@ -1,0 +1,57 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="page-header">
+    <h1 class="page-header-title">Authors</h1>
+</div>
+
+<div class="author-list">
+    <h2 class="category-title">Large Author List</h2>
+    <div class="author-card-list">
+        <div class="card-row">
+            <%- include("authors/author-card-lg"); %>
+            <%- include("authors/author-card-lg"); %>
+            <%- include("authors/author-card-lg"); %>
+        </div>
+    </div>
+</div>
+
+<div class="author-list">
+    <h2 class="category-title">Medium Author List</h2>
+    <div class="author-card-list">
+        <div class="card-row">
+            <%- include("authors/author-card-md"); %>
+            <%- include("authors/author-card-md"); %>
+            <%- include("authors/author-card-md"); %>
+            <%- include("authors/author-card-md"); %>
+        </div>
+    </div>
+</div>
+
+<div class="author-list">
+    <h2 class="category-title">Small Author List</h2>
+    <div class="author-card-list">
+        <div class="card-row">
+            <%- include("authors/author-card-sm"); %>
+            <%- include("authors/author-card-sm"); %>
+            <%- include("authors/author-card-sm"); %>
+            <%- include("authors/author-card-sm"); %>
+            <%- include("authors/author-card-sm"); %>
+        </div>
+    </div>
+</div>
+
+<div class="author-list">
+    <h2 class="category-title">Extra Small Author List</h2>
+    <div class="author-card-list">
+        <div class="card-row">
+            <%- include("authors/author-card-xsm"); %>
+            <%- include("authors/author-card-xsm"); %>
+            <%- include("authors/author-card-xsm"); %>
+            <%- include("authors/author-card-xsm"); %>
+            <%- include("authors/author-card-xsm"); %>
+            <%- include("authors/author-card-xsm"); %>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs"); %>

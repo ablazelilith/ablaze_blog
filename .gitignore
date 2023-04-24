@@ -1,0 +1,5 @@
+# Local development
+*.DS_Store
+
+# Node build artifacts
+node_modules

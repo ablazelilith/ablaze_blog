@@ -1,0 +1,22 @@
+<% for (var i = 0; i < blogpostPost.length; i++) { %>
+    <div class="blog-post">
+        <h3 class="blog-post-title"><%= blogpostTitle[i] %></h3>
+        <p><%= blogpostPost[i] %></p>
+        <div class="blog-post-footer">
+            <p class="author">By 
+                <% if (blogpostAuthor[i] === "" ) { %> 
+                    <span class="anonymous-author">Anonymous</span>
+                <% } else { %>
+                    <a href="/authors"><%= blogpostAuthor[i] %></a>
+                <% } %>
+            </p>
+            <p class="date">
+                <% if (blogpostDate[i] === "" ) { %> 
+                    <span class="not-available">N/A</span>
+                <% } else { %>
+                    <%= blogpostDate[i] %>
+                <% } %>
+            </p>
+        </div>
+    </div>
+<% } %>

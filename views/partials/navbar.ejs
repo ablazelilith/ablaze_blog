@@ -1,0 +1,64 @@
+<nav class="ablaze-navbar">
+    <div class="ablaze-navbar-container">
+        <div class="ablaze-brand">
+            <a href="/" class="nav-home-link">
+                <p class="navbar-brand">
+                    <img src="images/ablazelilith.png" class="ablaze-nav-pic" alt="Ablaze Lilith Picture">
+                    <span class="navbar-brandname">
+                        <span class="ablaze-brand-name">Ablaze</span>
+                        <span class="nav-brand-separator">|</span>
+                        <span class="brand-desc">Blog About Anything</span>
+                    </span>
+                </p>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <a href="/">
+                <div class="navbar-menu-item">Home</div>
+            </a>
+            <a href="/worlds-blogs">
+                <div class="navbar-menu-item">World's Blogs</div>
+            </a>
+            <a href="/authors">
+                <div class="navbar-menu-item">Authors</div>
+            </a>
+            <a href="/my-blog">
+                <div class="navbar-menu-item">My Blog</div>
+            </a>
+            <a href="/account">
+                <div class="navbar-menu-item">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </a>
+            <a href="/new-blog">
+                <div class="navbar-menu-item button">
+                    <% if (blogpostPost.length === 0) { %> 
+                        Start My Blog
+                    <% } else { %>
+                        New Blog Post
+                    <% } %>
+                </div>
+            </a>
+
+            <!-- <div class="navbar-menu-item">
+                <a href="/all-blogs"></a>
+            </div>
+            <div class="navbar-menu-item">
+                <a href=""></a>
+            </div>
+            <div class="navbar-menu-item">
+                <a href="/my-blog"></a>
+            </div>
+            <div class="navbar-menu-item">
+                <a href="/">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            <div class="navbar-menu-item button">
+                <a href="/new-blog" class="main-button">
+                    
+                </a>
+            </div> -->
+        </div>
+    </div>
+</nav>

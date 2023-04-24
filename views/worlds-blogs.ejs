@@ -1,0 +1,51 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="page-header">
+    <h1 class="page-header-title">World's Blogs</h1>
+</div>
+
+<div class="blog-category popular">
+
+    <div class="blog-category-header">
+        <h2 class="category-title">Fascinating Blogs Around the World</h1>
+        <!-- <a href="/">
+            <button class="secondary-button">Discover more</button>
+        </a> -->
+    </div>
+    
+    <div class="blog-post-group all-blogs">
+
+        <div class="blog-post">
+            <img src="<%= popularBlogPost[1].thumbnail %>" class="blog-post-img" alt="Blog post image">
+            <div class="blog-post-content">
+                <h3 class="blog-post-title"><%= popularBlogPost[1].title %></h3>
+                <p><%= popularBlogPost[1].intro %></p>
+                <!-- <p><%= popularBlogPost[1].content %></p> -->
+                <div class="blog-post-footer">
+                    <p class="author">By <a href="<%= popularBlogPost[1].author.externalLink %>"><%= popularBlogPost[1].author.name %></a></p>
+                    <p class="date"><%= popularBlogPost[1].time %></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <img src="<%= popularBlogPost[2].thumbnail %>" class="blog-post-img" alt="Blog post image">
+            <div class="blog-post-content">
+                <h3 class="blog-post-title"><%= popularBlogPost[2].title %></h3>
+                <p><%= popularBlogPost[2].intro %></p>
+                <!-- <p><%= popularBlogPost[2].content %></p> -->
+                <div class="blog-post-footer">
+                    <p class="author">By <a href="<%= popularBlogPost[2].author.externalLink %>"><%= popularBlogPost[2].author.name %></a></p>
+                    <p class="date"><%= popularBlogPost[2].time %></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<%- include("partials/footer.ejs"); %>

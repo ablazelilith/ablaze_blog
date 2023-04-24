@@ -1,0 +1,103 @@
+<%- include("partials/header.ejs"); %>
+
+<!-- /* ===========* 🐱💛( MY BLOG POSTS )💛🐱 *=========== */ -->
+
+<div class="page-header">
+    <h1 class="page-header-title">Blogs</h1>
+</div>
+
+<div class="blog-category">
+
+    <div class="blog-category-header">
+        <h2 class="blog-category-title">
+            <% if (newBlogName === "") { %> 
+                My Blog
+            <% } else { %>
+                <%= newBlogName %>
+            <% } %>
+        </h1>
+        <a href="/new-blog">
+            <!-- <button class="secondary-button"><i class="fa-solid fa-feather-pointed"></i></button> -->
+            <button class="secondary-button">New Blogpost</button>
+        </a>
+    </div>
+
+    <div class="blog-post-list">
+
+        <% if (blogpostPost.length === 0) { %>
+            <div class="blog-post empty-journals">
+                <!-- <img src="images/ablazelilith.webp" class="ablaze-emptyjournals-icon" alt="Ablaze Lilith"> -->
+                <div class="empty-journals-notice">
+                    <div class="empty-journals-notice-content">
+                        <h3 class="blog-post-title"><%= homeContent.title %></h3>
+                        <p class="empty-journals-notice-message"><%= homeContent.content %></p>
+                        <a href="/new-blog">
+                            <button type="submit" class="main-button">Start My Blog</button>
+                            <!-- <button type="submit" class="main-button">New Post &nbsp;<i class="fa-solid fa-feather-pointed"></i></button> -->
+                        </a>
+                    </div>
+                </div>
+                <img src="images/ablazelilith.webp" class="ablaze-emptyjournals-icon" alt="Ablaze Lilith">
+            </div>
+        <% } else { %>
+            <%- include("partials/blog-post.ejs"); %>
+        <% } %>
+
+    </div>
+
+</div>
+
+<!-- /* ===========* 🦊🧡( WORLD'S POPULAR BLOGS )🧡🦊 *=========== */ -->
+
+<div class="blog-category">
+
+    <div class="blog-category-header">
+        <h2 class="blog-category-title">Most Popular Blogs</h1>
+        <a href="/">
+            <!-- <button class="secondary-button"><i class="fa-solid fa-feather-pointed"></i></button> -->
+            <button class="secondary-button">Discover more</button>
+        </a>
+    </div>
+    
+    <!-- <img src="images/ablazelilith-bg-sm-6.png" alt="Header image" class="header-image"> -->
+
+    <div class="blog-post">
+        <img src="<%= popularBlogPost[2].thumbnail %>" class="blog-post-img" alt="Blog post image">
+        <h3 class="blog-post-title"><%= popularBlogPost[1].title %></h3>
+        <p><%= popularBlogPost[1].intro %></p>
+        <!-- <p><%= popularBlogPost[1].content %></p> -->
+        <div class="blog-post-footer">
+            <p class="author">Author<a href="/about"><%= popularBlogPost[1].author %></a></p>
+            <p class="date"><%= popularBlogPost[1].time %></p>
+        </div>
+    </div>
+
+    <div class="blog-post-list popular">
+
+        <div class="blog-post popular first">
+            <img src="<%= popularBlogPost[0].thumbnail %>" class="blog-post-img" alt="Blog post image">
+            <h3 class="blog-post-title"><%= popularBlogPost[0].title %></h3>
+            <p><%= popularBlogPost[0].intro %></p>
+            <!-- <p><%= popularBlogPost[0].content %></p> -->
+            <div class="blog-post-footer">
+                <p class="author">Author<a href="/about"><%= popularBlogPost[0].author %></a></p>
+                <p class="date"><%= popularBlogPost[0].time %></p>
+            </div>
+        </div>
+
+        <div class="blog-post popular second">
+            <img src="<%= popularBlogPost[1].thumbnail %>" class="blog-post-img" alt="Blog post image">
+            <h3 class="blog-post-title"><%= popularBlogPost[1].title %></h3>
+            <p><%= popularBlogPost[1].intro %></p>
+            <!-- <p><%= popularBlogPost[1].content %></p> -->
+            <div class="blog-post-footer">
+                <p class="author">Author<a href="/about"><%= popularBlogPost[1].author %></a></p>
+                <p class="date"><%= popularBlogPost[1].time %></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<%- include("partials/footer.ejs"); %>

@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="page-header">
+    <h1 class="page-header-title">
+        <% if (blogpostPost.length === 0) { %> 
+            Start Your first Blog
+        <% } else { %>
+            New Blog Post
+        <% } %>
+    </h1>
+</div>
+
+<form action="/new-blog" method="post" class="new-blog">
+
+    <% if (newBlogName === "") { %> 
+        <div class="users-blog-name">
+            <label for="blogpostTitle">Blog Name</label>
+            <input class="blogpost-title" type="text" name="blogName" placeholder="Your Memorable Blog Name" autocomplete="off">
+        </div>
+    <% } %>
+
+    <div class="blogpost-title-wrap">
+        <label for="blogpostTitle">Title</label>
+        <input class="blogpost-title" type="text" name="blogpostTitle" placeholder="Attention grabbing title" required autocomplete="off">
+    </div>
+
+    <div class="blogpost-content-wrap">
+        <label for="blogpostText">Content</label>
+        <textarea class="blogpost-textarea" name="blogpostText" placeholder="Interesting content ..." required></textarea>
+    </div>
+
+    <div class="blogpost-author-and-external-link">
+        <div class="blogpost-author-wrap">
+            <label for="blogpostAuthor">Author Name</label>
+            <input class="blogpost-author" type="text" name="blogpostAuthor" placeholder="Full Name" autocomplete="off">
+        </div>
+        <div class="blogpost-external-link-wrap">
+            <label for="blogpostExternalLink">External Link</label>
+            <input class="blogpost-title" type="text" name="blogpostExternalLink" placeholder="https://example.com" autocomplete="off">
+        </div>
+    </div>
+
+    <div class="button-list">
+        <button type="submit" class="outline-button">Save Draft</button>
+        <button type="submit" class="main-button">Publish Now<!-- <i class="fa-solid fa-paper-plane"></i> --></button>
+    </div>
+</form>
+
+<%- include("partials/footer.ejs"); %>
