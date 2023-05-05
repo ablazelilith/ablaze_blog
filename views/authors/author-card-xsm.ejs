@@ -1,20 +1,14 @@
-<div class="author-card xsm">
-    <div class="author-card-img xsm">
-        <img src="images/ablazelilith.png" alt="Ablaze Lilith">
-    </div>
-    <div class="author-card-info xsm">
-        <h3>Ablaze</h3>
-        <div class="flare-points-wrap">
-            <span class="flare-point">100</span>
-            <!-- <i class="fa-solid fa-fire flare-point-icon"></i> -->
+<% for (var i = 12; i < 18; i++) { %>
+    <div class="author-card xsm">
+        <div class="author-card-img xsm">
+            <img src="authors/<%= author[i].image %>" alt="<%= author[i].name %>">
         </div>
-        <!-- <div class="card-info-item xsm">
-            <i class="fa-solid fa-envelope"></i>
-            <a href="email:ablazelilith@gmail.com">ablazelilith@gmail.com</a>
-        </div> -->
-        <!-- <div class="card-info-item xsm">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+66640890002">+66 64 089 0002</a>
-        </div> -->
+        <div class="author-card-info xsm">
+            <h3><%= author[i].name %></h3>
+            <div class="author-points-wrap">
+                <i class="fa-solid fa-crown author-point-icon bronze-author"></i>
+                <span class="author-points"><%= author[i].points %></span>
+            </div>
+        </div>
     </div>
-</div>
+<% } %>

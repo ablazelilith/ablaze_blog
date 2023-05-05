@@ -5,19 +5,44 @@
         <% if (blogpostPost.length === 0) { %> 
             Start Your first Blog
         <% } else { %>
-            New Blog Post
+            Create New Post
         <% } %>
     </h1>
 </div>
 
-<form action="/new-blog" method="post" class="new-blog">
+<div class="blog-category-header">
+    <h2 class="category-title">
+        <% if (blogpostPost.length === 0) { %> 
+            Create Blog
+        <% } else { %>
+            New Blog Post
+        <% } %>
+    </h2>
+</div>
 
-    <% if (newBlogName === "") { %> 
+<% if (blogName == "My Blog") { %> 
+
+    <form action="/new-blog-name" method="post" class="new-blog">
+
+        <div class="users-blog-name">
+            <label for="blogpostTitle">Blog name</label>
+            <input class="blogpost-title" type="text" name="blogName" placeholder="Unique and memorable blog name" autocomplete="off">
+        </div>
+
+        <button type="submit" class="main-button">Save</button>
+
+    </form>
+
+<% } %>
+
+<form action="/new-blog" method="post" enctype="multipart/form-data" class="new-post-form">
+
+    <!-- <% if (blogName.length === 0) { %> 
         <div class="users-blog-name">
             <label for="blogpostTitle">Blog Name</label>
-            <input class="blogpost-title" type="text" name="blogName" placeholder="Your Memorable Blog Name" autocomplete="off">
+            <input class="blogpost-title" type="text" name="blogName" placeholder="Unique And Memorable Blog Name" autocomplete="off">
         </div>
-    <% } %>
+    <% } %> -->
 
     <div class="blogpost-title-wrap">
         <label for="blogpostTitle">Title</label>
@@ -29,20 +54,25 @@
         <textarea class="blogpost-textarea" name="blogpostText" placeholder="Interesting content ..." required></textarea>
     </div>
 
+    <div class="blogpost-image-file-wrap">
+        <label for="image">Upload image</label>
+        <input class="blogpost-image-file" type="file" name="postImage" required>
+    </div>
+
     <div class="blogpost-author-and-external-link">
         <div class="blogpost-author-wrap">
-            <label for="blogpostAuthor">Author Name</label>
-            <input class="blogpost-author" type="text" name="blogpostAuthor" placeholder="Full Name" autocomplete="off">
+            <label for="blogpostAuthor">Author name</label>
+            <input class="blogpost-author" type="text" name="blogpostAuthor" placeholder="Full name" autocomplete="off">
         </div>
         <div class="blogpost-external-link-wrap">
-            <label for="blogpostExternalLink">External Link</label>
-            <input class="blogpost-title" type="text" name="blogpostExternalLink" placeholder="https://example.com" autocomplete="off">
+            <label for="authorContactLink">Contact link</label>
+            <input class="blogpost-author-link" type="text" name="authorContactLink" placeholder="https://example.com" autocomplete="off">
         </div>
     </div>
 
     <div class="button-list">
-        <button type="submit" class="outline-button">Save Draft</button>
-        <button type="submit" class="main-button">Publish Now<!-- <i class="fa-solid fa-paper-plane"></i> --></button>
+        <a href="/" class="outline-button">Cancel</a>
+        <button type="submit" class="main-button">Publish Now</button>
     </div>
 </form>
 

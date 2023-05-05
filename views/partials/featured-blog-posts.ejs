@@ -1,0 +1,48 @@
+<% for (var i = 0; i < featuredBlog.length; i++) { %>
+    <div class="blog-post horizontal">
+
+        <div class="blog-post-image-cover">
+            <img src="blogs/<%= featuredBlog[i].thumbnail %>" class="blog-post-image" alt="<%= featuredBlog[i].title %> image">
+        </div>
+
+        <div class="blog-post-content">
+            <div class="blog-post-header-and-body-wrap">
+                <div class="blog-post-header">
+                    <h3 class="blog-post-title"><%= featuredBlog[i].title %></h3>
+                    <div class="blog-post-id">
+                        <span>ID <span class="blog-post-id-text"><%= featuredBlog[i].id %></span></span>
+                    </div>
+                </div>
+                <div class="blog-post-body">
+                    <p><%= featuredBlog[i].intro %></p>
+                    <!-- <% if (featuredBlog[i].contentImages.length > 0) { %>
+                        <img src="blogs/<%= featuredBlog[i].contentImages[0] %>" alt="<%= featuredBlog[i].title %>" class="blog-post-content-image">
+                    <% } %> -->
+                    <!-- <p class="blog-post-source">Source: <a href="<%= featuredBlog[i].source %>" target="_blank" rel="noopener noreferrer"><%= featuredBlog[i].source %></a></p> -->
+                </div>
+            </div>
+            <div class="blog-post-footer-wrap">
+                <div class="blog-post-footer">
+                    <p class="author">
+                        <span class="by">By</span> 
+                        <% if (featuredBlog[i].author.name === "" ) { %> 
+                            <span class="anonymous-author">Anonymous</span>
+                        <% } else if (featuredBlog[i].author.authorLink !== "") { %> 
+                            <a href="<%= featuredBlog[i].author.authorLink %>" target="_blank" rel="noopener noreferrer" class="author-link"><%= featuredBlog[i].author.name %></a>
+                        <% } else { %>                  
+                            <span class="nolink-author"><%= featuredBlog[i].author.name %></span>
+                        <% } %>
+                    </p>
+                    <p class="date">
+                        <% if (featuredBlog[i].time === "" ) { %> 
+                            <span class="not-available">N/A</span>
+                        <% } else { %>
+                            <%= featuredBlog[i].time %>
+                        <% } %>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<% } %>

@@ -1,0 +1,78 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500" style="margin: 32px 0 40px;"> 
+    <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div> -->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="blog-post popular-first">
+                <img src="blogs/<%= featuredBlog[0].hero %>" class="blog-post-image" alt="Blog post image">
+                <div class="blog-post-content">
+                    <div class="blog-post-header">
+                        <h3 class="blog-post-title"><%= featuredBlog[0].title %></h3>
+                    </div>
+                    <div class="blog-post-body">
+                        <p><%= featuredBlog[0].intro %></p>
+                    </div>
+                    <div class="blog-post-footer">
+                        <p class="author">
+                            <span class="by">By</span><a href="<%= featuredBlog[0].author.externalLink %>" class="author-link"><%= featuredBlog[0].author.name %></a>
+                        </p>
+                        <p class="date"><%= featuredBlog[0].time %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="blog-post popular-first">
+                <img src="blogs/<%= featuredBlog[1].hero %>" class="blog-post-image" alt="Blog post image">
+                <div class="blog-post-content">
+                    <div class="blog-post-header">
+                        <h3 class="blog-post-title"><%= featuredBlog[1].title %></h3>
+                    </div>
+                    <div class="blog-post-body">
+                        <p><%= featuredBlog[1].intro %></p>
+                    </div>
+                    <div class="blog-post-footer">
+                        <p class="author">
+                            <span class="by">By</span><a href="<%= featuredBlog[1].author.externalLink %>" class="author-link"><%= featuredBlog[1].author.name %></a>
+                        </p>
+                        <p class="date"><%= featuredBlog[1].time %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="blog-post popular-first">
+                <img src="blogs/<%= featuredBlog[2].hero %>" class="blog-post-image" alt="Blog post image">
+                <div class="blog-post-content">
+                    <div class="blog-post-header">
+                        <h3 class="blog-post-title"><%= featuredBlog[2].title %></h3>
+                    </div>
+                    <div class="blog-post-body">
+                        <p><%= featuredBlog[2].intro %></p>
+                    </div>
+                    <div class="blog-post-footer">
+                        <p class="author">
+                            <span class="by">By</span><a href="<%= featuredBlog[2].author.externalLink %>" class="author-link"><%= featuredBlog[2].author.name %></a>
+                        </p>
+                        <p class="date"><%= featuredBlog[2].time %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

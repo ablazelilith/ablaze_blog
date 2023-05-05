@@ -1,0 +1,18 @@
+<% for (var i = 0; i < 4; i++) { %>
+    <div class="author-card md">
+        <div class="author-card-img md">
+            <img src="authors/<%= author[i].image %>" alt="<%= author[i].name %>">
+        </div>
+        <div class="author-card-info md">
+            <h3><%= author[i].name %></h3>
+            <div class="author-points-wrap">
+                <% if (i < 3) { %>
+                    <i class="fa-solid fa-crown author-point-icon platinum-author"></i>
+                <% } else { %>
+                    <i class="fa-solid fa-crown author-point-icon gold-author"></i>
+                <% } %>
+                <span class="author-points"><%= author[i].points %></span>
+            </div>
+        </div>
+    </div>
+<% } %>
