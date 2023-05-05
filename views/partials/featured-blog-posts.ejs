@@ -9,9 +9,9 @@
             <div class="blog-post-header-and-body-wrap">
                 <div class="blog-post-header">
                     <h3 class="blog-post-title"><%= featuredBlog[i].title %></h3>
-                    <div class="blog-post-id">
+                    <!-- <div class="blog-post-id">
                         <span>ID <span class="blog-post-id-text"><%= featuredBlog[i].id %></span></span>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="blog-post-body">
                     <p><%= featuredBlog[i].intro %></p>
@@ -32,14 +32,19 @@
                         <% } else { %>                  
                             <span class="nolink-author"><%= featuredBlog[i].author.name %></span>
                         <% } %>
-                    </p>
-                    <p class="date">
-                        <% if (featuredBlog[i].time === "" ) { %> 
-                            <span class="not-available">N/A</span>
-                        <% } else { %>
-                            <%= featuredBlog[i].time %>
-                        <% } %>
-                    </p>
+                    </p>                        
+                    <div class="date-and-blogpost-id">
+                        <p class="date">
+                            <% if (featuredBlog[i].time === "" ) { %> 
+                                <span class="not-available">N/A</span>
+                            <% } else { %>
+                                <%= featuredBlog[i].time %>
+                            <% } %>
+                        </p>
+                        <p class="blog-post-id">, 
+                            <span>Post ID<span class="blog-post-id-text"><%= featuredBlog[i].id %></span></span>
+                        </p>
+                    </div>
                 </div>
             </div>
 

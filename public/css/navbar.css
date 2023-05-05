@@ -194,7 +194,8 @@
     padding: 10px 14px;
     letter-spacing: .375px;
     border-radius: 9px;
-    padding: 10px 13px;
+    border-radius: 8px;
+    padding: 10px 14px;
 }
 
 .navbar-menu-item.button i {
