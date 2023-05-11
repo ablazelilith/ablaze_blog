@@ -10,9 +10,9 @@
             <div class="blog-post-header-and-body-wrap">
                 <div class="blog-post-header">
                     <h3 class="blog-post-title"><%= blogpostTitle[i] %></h3>
-                    <div class="blog-post-id">
+                    <!-- <div class="blog-post-id">
                         <span>ID <span class="blog-post-id-text">BZG<%= blogpostID[i] %></span></span>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="blog-post-body">
                     <p><%= blogpostPost[i] %></p>
@@ -30,13 +30,25 @@
                             <span class="nolink-author"><%= blogpostAuthor[i] %></span>
                         <% } %>
                     </p>
-                    <p class="date">
+                    <!-- <p class="date">
                         <% if (blogpostDate[i] === "" ) { %> 
                             <span class="not-available">N/A</span>
                         <% } else { %>
                             <%= blogpostDate[i] %>
                         <% } %>
-                    </p>
+                    </p> -->
+                    <div class="date-and-blogpost-id">
+                        <p class="date">
+                            <% if (blogpostDate[i] === "") { %> 
+                                <span class="not-available">N/A</span>
+                            <% } else { %>
+                                <%= blogpostDate[i] %>
+                            <% } %>
+                        </p>
+                        <p class="blog-post-id">, 
+                            <span>Post ID<span class="blog-post-id-text"><%= blogpostID[i] %></span></span>
+                        </p>
+                    </div>
                 </div>
             </div>
 

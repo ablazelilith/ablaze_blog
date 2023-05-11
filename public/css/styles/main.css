@@ -1,0 +1,96 @@
+html {
+}
+
+body {
+    background-color: #f2f2f2;
+    background-image: linear-gradient(0deg, #d2cedd, #f6f6f6);
+    letter-spacing: .25px;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 980px;
+    padding-top: 52px;
+}
+
+.main {
+    padding-bottom: 32px;
+}
+
+.page-container {
+    padding: 28px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/blaze-header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 36px 36px;
+    height: 130px;
+    margin: 0 0 40px;
+    padding-bottom: 0;
+}
+
+.page-header-title {
+    color: #524d70;
+    font-size: 26px;
+    font-family: 'Caudex', serif;
+    font-weight: 400;
+    letter-spacing: .25px;
+    text-shadow: 
+    0px 0px 80px #ddd9ee, 0px 0px 80px #ddd9ee, 0px 0px 80px #ddd9ee, 0px 0px 80px #ddd9ee, 0px 0px 80px #ddd9ee, 0px 0px 80px #ddd9ee, 0px 0px 80px #ddd9ee, 0px 0px 70px #ddd9ee, 0px 0px 70px #ddd9ee, 0px 0px 70px #ddd9ee, 0px 0px 70px #ddd9ee, 0px 0px 70px #ddd9ee, 0px 0px 70px #ddd9ee, 0px 0px 70px #ddd9ee, 0px 0px 60px #ddd9ee, 0px 0px 60px #ddd9ee, 0px 0px 60px #ddd9ee, 0px 0px 60px #ddd9ee, 0px 0px 60px #ddd9ee, 0px 0px 60px #ddd9ee, 0px 0px 60px #ddd9ee, 0px 0px 50px #ddd9ee, 0px 0px 50px #ddd9ee, 0px 0px 50px #ddd9ee, 0px 0px 50px #ddd9ee, 0px 0px 50px #ddd9ee, 0px 0px 50px #ddd9ee, 0px 0px 50px #ddd9ee, 0px 0px 40px #ddd9ee, 0px 0px 40px #ddd9ee, 0px 0px 40px #ddd9ee, 0px 0px 40px #ddd9ee, 0px 0px 40px #ddd9ee, 0px 0px 40px #ddd9ee, 0px 0px 40px #ddd9ee, 0px 0px 30px #ddd9ee, 0px 0px 30px #ddd9ee, 0px 0px 30px #ddd9ee, 0px 0px 30px #ddd9ee, 0px 0px 30px #ddd9ee, 0px 0px 30px #ddd9ee, 0px 0px 30px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 20px #ddd9ee, 0px 0px 10px #ddd9ee, 0px 0px 10px #ddd9ee, 0px 0px 10px #ddd9ee, 0px 0px 10px #ddd9ee, 0px 0px 10px #ddd9ee, 0px 0px 10px #ddd9ee, 0px 0px 10px #ddd9ee, 0px 0px 10px #ddd9ee;
+}
+
+.header-image {
+    border-radius: 0 0 16px 16px; 
+    width: 100%;
+}
+
+.h1, h1 {
+    font-size: 31px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.h2, h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #555;
+    letter-spacing: 1.25px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.h3, h3 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.main p {
+    margin-bottom: 16px;
+    color: #515151;
+    letter-spacing: .375px;
+    line-height: 1.625;
+}
+
+.main p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: #796ebe;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #665aae;
+    text-decoration: none;
+}
+
+a:active {
+    color: #5a4f9f;
+}

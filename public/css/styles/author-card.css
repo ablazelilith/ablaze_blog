@@ -1,0 +1,299 @@
+
+.card-row {
+    display: flex;
+}
+
+.card-row:first-child {
+    margin-top: -16px;
+}
+
+.card-row:last-child {
+    margin-bottom: -24px;
+}
+
+.author-list {
+    padding: 40px 0 76px;
+    /* padding: 38px 0 76px; */
+    border-top: 1px dotted #b8b8b8;
+}
+
+/* ===============* 🦄💜( AUTHOR CARD )💜🦄 *=============== */
+.author-card-list.platinum .card-row {
+    display: flex;
+    align-items: center;
+}
+
+.author-card {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 9px;
+    transition: all .2s ease;
+    width: 30%;
+}
+
+.author-card:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.3);
+}
+
+
+.author-card:hover .author-card-img img {
+    filter: brightness(.85);
+}
+
+/* .author-card-img {
+    border-radius: 8px;
+} */
+
+.author-card-img img {
+    width: 100%;
+    border-radius: 8px;
+    transition: all .2s ease;
+}
+
+.author-card-info {
+    padding: 0 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 2px;
+}
+
+.author-card h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #333;
+    color: #515151;
+}
+
+.author-points-wrap {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.author-points {
+    color: rgb(51 51 51 / 60%);
+}
+
+.author-point-icon {
+    font-size: 13px;
+    color: rgb(51 51 51 / 40%);
+    margin-right: 6px;
+}
+
+/* ===========* 🦋💙( AUTHOR CARD | LARGE )💙🦋 *=========== */
+.author-card.lg {
+    width: 31%;
+    margin: 0 24px;
+    /* margin: 0 22px; */
+    border-radius: 22px;
+    border-radius: 24px;
+    border-radius: 28px;
+    padding: 10px;
+    padding: 9px;
+    padding: 8px;
+}
+
+.author-card.lg:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.author-card.lg:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.author-card.lg:nth-child(2) {
+    width: 36%;
+    /* width: 37%; */
+}
+
+.author-card.lg:nth-child(1),
+.author-card.lg:nth-child(3) {
+    width: 32%;
+    /* width: 31.5%; */
+    height: fit-content;
+}
+
+
+.author-card.lg .author-card-img img {
+    border-radius: 16px;
+    border-radius: 20px;
+}
+
+.author-card.lg .author-card-info { 
+    padding: 0 8px;
+    margin-bottom: 4px;
+}
+
+.author-card.lg h3 {
+    font-size: 15.5px;
+}
+
+.author-card.lg .author-point-icon {
+    font-size: 15px;
+    margin-right: 6px;
+}
+
+
+/* ===========* 🐱💛( AUTHOR CARD | MEDIUM )💛🐱 *=========== */
+.author-card.md {
+    width: 25%;
+    margin: 0 20px;
+    margin: 0 24px;
+    padding: 8px;
+    padding: 7px;
+    border-radius: 24px;
+}
+
+.author-card.md:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.author-card.md:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.author-card:hover .author-card-img.md {
+    border: none;
+}
+
+.author-card-img.md {
+    margin-bottom: 0;
+}
+
+.author-card-img.md img {
+    border-radius: 16px;
+}
+
+.author-card.md .author-card-info {
+    margin-top: 12px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding: 0 6px;
+}
+
+.author-card.md h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+    margin-bottom: 0px;
+}
+
+.author-card.md .author-point-icon {
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+/* ===========* 🐢💚( AUTHOR CARD | SMALL )💚🐢 *=========== */
+.author-card.sm {
+    width: 20%;
+    margin: 0 20px;
+    margin: 0 24px;
+    padding: 8px;
+    padding: 7.5px;
+    padding: 7px;
+    border-radius: 18px;
+    border-radius: 20px;
+}
+
+.author-card.sm:nth-child(5n+1) {
+    margin-left: 0;
+}
+
+.author-card.sm:nth-child(5n+5) {
+    margin-right: 0;
+}
+
+.author-card-img.sm {
+    border-radius: 12px;
+}
+
+.author-card-img.sm img {
+    border-radius: 12px;
+    border-radius: 14px;
+}
+
+.author-card-info.sm {
+    padding: 0 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.author-card-info.sm .author-points-wrap {
+    font-size: 13px;
+}
+
+.author-card.sm h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.author-card-info.sm .author-point-icon {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+/* ===========* 🦊🧡( AUTHOR CARD | EXTRA SMALL )🧡🦊 *=========== */
+.author-card.xsm {
+    width: 16%;
+    margin: 0 18px;
+    margin: 0 22px;
+    padding: 7px;
+    border-radius: 18px;
+}
+
+.author-card.xsm:nth-child(6n+1) {
+    margin-left: 0;
+}
+
+.author-card.xsm:nth-child(6n+6) {
+    margin-right: 0;
+}
+
+.author-card-img.xsm img {
+    border-radius: 12px;
+}
+
+.author-card.xsm .author-card-info {
+    margin-top: 10px;
+    margin-top: 9px;
+    padding: 0 4px;
+    margin-bottom: 2px;
+}
+
+.author-card.xsm h3 {
+    font-size: 14px;
+    font-size: 13.5px;
+}
+
+.author-card-info.xsm .author-points-wrap {
+    font-size: 12px;
+}
+
+.author-card-info.xsm .author-point-icon {
+    font-size: 13px;
+    margin-right: 4px;
+    margin-top: -1px;
+}
+
+.platinum-author {
+    color: #43425e;
+}
+
+.gold-author {
+    color: #b38e4c;
+}
+
+.silver-author {
+    color: #919191;
+}
+
+.bronze-author {
+    color: #af796b;
+}

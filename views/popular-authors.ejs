@@ -1,15 +1,15 @@
 <%- include("partials/header.ejs"); %>
 
 <div class="page-header">
-    <h1 class="page-header-title">World's Most Beloved Authors</h1>
+    <h1 class="page-header-title">World's Favorite Authors</h1>
 </div>
 
 <div class="author-list pt-0 bt-0">
-    <h2 class="sub-category-title">
-        <i class="fa-solid fa-crown platinum-author"></i>Platinum Tier Authors
-        <!-- <i class="fa-solid fa-fire platinum-author"></i>Platinum Tier Authors -->
-    </h2>
-    <div class="author-card-list">
+    <div class="sub-category-header">
+        <i class="fa-solid fa-crown platinum-author"></i>
+        <h2 class="sub-category-title">Platinum Tier</h2>
+    </div>
+    <div class="author-card-list platinum">
         <div class="card-row">
             <%- include("authors/author-card-lg"); %>
         </div>
@@ -17,10 +17,10 @@
 </div>
 
 <div class="author-list">
-    <h2 class="sub-category-title">
-        <i class="fa-solid fa-crown gold-author"></i>Gold Tier Authors
-        <!-- <i class="fa-solid fa-fire gold-author"></i>Gold Tier Authors -->
-    </h2>
+    <div class="sub-category-header">
+        <i class="fa-solid fa-crown gold-author"></i>
+        <h2 class="sub-category-title">Gold Tier</h2>
+    </div>
     <div class="author-card-list">
         <div class="card-row">
             <%- include("authors/author-card-md"); %>
@@ -29,10 +29,10 @@
 </div>
 
 <div class="author-list">
-    <h2 class="sub-category-title">
-        <i class="fa-solid fa-crown silver-author"></i>Silver Tier Authors
-        <!-- <i class="fa-solid fa-fire silver-author"></i>Silver Tier Authors -->
-    </h2>
+    <div class="sub-category-header">
+        <i class="fa-solid fa-crown silver-author"></i>
+        <h2 class="sub-category-title">Silver Tier</h2>
+    </div>
     <div class="author-card-list">
         <div class="card-row">
             <%- include("authors/author-card-sm"); %>
@@ -40,17 +40,17 @@
     </div>
 </div>
 
-<div class="author-list">
-    <h2 class="sub-category-title">
-        <i class="fa-solid fa-crown bronze-author"></i>Bronze Tier Authors
-        <!-- <i class="fa-solid fa-fire bronze-author"></i>Bronze Tier Authors -->
-    </h2>
+<!-- <div class="author-list">
+    <div class="sub-category-header">
+        <i class="fa-solid fa-crown bronze-author"></i>
+        <h2 class="sub-category-title">Bronze Tier</h2>
+    </div>
     <div class="author-card-list">
         <div class="card-row">
             <%- include("authors/author-card-xsm"); %>
         </div>
     </div>
-</div>
+</div> -->
 
 
 

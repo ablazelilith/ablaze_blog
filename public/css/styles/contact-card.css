@@ -1,0 +1,45 @@
+/*  =============== CONTACT CARD =============== */
+.contact-card {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+    margin: 32px 0 0;
+    padding: 10px;
+    width: 43%;
+    display: flex;
+}
+
+.contact-card:hover {
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
+
+.contact-card-img img {
+    width: 120px;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.contact-card-info {
+    padding: 0 2px;
+    padding: 6px 2px 0 14px;
+}
+
+.contact-card h3 {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin: 0;
+    text-indent: 0;
+}
+
+.card-info-item {
+    margin-bottom: 2px;
+}
+
+.card-info-item i {
+    margin-right: 3px;
+    opacity: .6;
+}

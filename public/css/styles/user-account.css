@@ -1,0 +1,89 @@
+.user-account {
+    display: flex;
+    width: 100%;
+}
+
+.account-profile-image {
+    width: 20%;
+}
+
+.account-profile-image img {
+    background-color: white;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: all .2s ease;
+    border-radius: 22px;
+    padding: 8px;
+    border-radius: 24px;
+    padding: 7px;
+    width: 100%;
+}
+
+.account-profile-container {
+    width: 80%;
+    display: flex;
+}
+
+.account-profile-edit {
+    width: 15%;
+    display: flex;
+    justify-content: end;
+}
+
+.account-profile-edit .secondary-button {
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+
+
+.account-profile-edit .secondary-button i {
+    margin-right: 7px;
+    font-size: 12px;
+}
+
+.account-profile {
+    width: 85%;
+    padding-left: 42px;
+    padding-left: 45px;
+    color: #333;
+}
+
+.acc-user-name {
+    font-size: 22px;
+    font-weight: 600; 
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    letter-spacing: .25px;
+}
+
+.acc-info-item {
+    width: 100%;
+    display: flex;
+    padding: 4px 0;
+}
+
+.acc-admin-panel {
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+.acc-admin {
+    font-weight: 600;
+}
+
+.acc-admin i {
+    padding-left: 8px;
+    font-size: 13px;
+}
+
+.acc-info-label {
+    width: 17%;
+    width: 20%;
+    letter-spacing: .15px;
+}
+
+.acc-info-desc {
+    width: 80%;
+}

@@ -40,14 +40,14 @@ const homeStartContent = {
 const featuredBlogs = [
     {
         id: "BZ01",
-        title: "Spaghetti from Lady and the Tramp",
-        hero: "spaghetti-from-lady-and-the-tramp-hero.png",
-        thumbnail: "spaghetti-from-lady-and-the-tramp.jpeg",
-        intro: "During the summer, they worked hard: they trained to jump from hats to scarves, to hold on to ringlets, to swing from barrettes to elastic bands. They sow discord in very quiet classes, they terrorize teachers with long hair.",
-        content: "What are we eating tonight ?  The most famous spaghetti in the world: those of Lady and the Tramp. It's dumplings, isn't it? Here is the recipe, served with its al dente anecdotes. Ingredients For the dumplings: Exactly, speaking of dumplings: the legendary dinner scene between Lady and Tramp almost never existed! Walt Disney was not convinced by the first sketches. Screenwriter Frank Thomas was a firm believer in this and decided to draw and animate the scene before showing it to Walt Disney. Bingo, it worked! - about 400 gr of meat (depending on your tastes, it can be only beef, a beef / veal mix, in a veggie version with lentils, red beans, cauliflower, tofu etc.) - 25 gr of stale bread (or breadcrumbs) - 1 glass of milk - 15-20 gr of grated parmesan (according to your tastes too, we tend to always add more) - 1 egg - 2 tablespoons of flour - 1 knob of butter - the inseparable duo: salt, pepper Ps: you can also add thyme, bay leaf, parsley... as you like! For the rest: The character of Lady, Beauty, is inspired by Joe Grant's pretty Cocker Spaniel dog, and Clochard is inspired by a real abandoned dog who had found refuge in the Disney studios. It was even the screenwriter of Sleeping Beauty and Cinderella who finally adopted it! - 400 gr of spaghetti - 800 gr of tomato pulp - 1 onion - 1 clove of garlic - olive oil - herbs (if you want)",
+        title: "The battle of the schools",
+        hero: "the-battle-of-the-schools-hero.png",
+        thumbnail: "the-battle-of-the-schools.png",
+        intro: "We have put aside their bestsellers for you to learn while having fun: books on great historical figures, super fun encyclopedias, friezes to decorate the courtyard, games to memorize the major events of our history.",
+        content: "GET READY TO MAKE A FUSS! Expired. Notice to all parents of students who read us: warm up the class whatsapp and the FCPE email loop! The My Little Kids School Battle is back and this year, we're offering you nearly €200 worth of fun and educational books, games and posters for the whole school. We give you the topo?  For this new edition of our School Battle,  we are partnering with Quelle Histoire, the small publishing house that makes you want to discover History with a capital H.We have put aside their bestsellers for you to learn while having fun: books on great historical figures, super fun encyclopedias, friezes to decorate the courtyard, games to memorize the major events of our history... To pocket the jackpot for your school, it's simple: you create your team in the name of your school and you share it as much as possible. The more you are, the more you climb in the ranking. The first 3 schools win! And so that it's super easy to share, we've planned everything: poster to stick on the panel at the entrance to the school, small sheet to slip into the correspondence book, link to share directly with friends... Prepare you, this Battle, we're going to make a lot of history!",
         contentImages: [],
         author: { name: "My Little Kids", authorLink: "https://www.mylittlekids.fr/" },
-        source: "https://www.mylittlekids.fr/manger/spaghettis-belle-et-le-clochard-disney-recette",
+        source: "https://www.mylittlekids.fr/lire-grandir/battle-ecole-concours-cadeau-livre-jeu-pedagodique-quelle-histoire",
         time: "N/A"
     },
     {
@@ -64,6 +64,18 @@ const featuredBlogs = [
     },
     {
         id: "BZ03",
+        title: "Spaghetti from Lady & the Tramp",
+        hero: "spaghetti-from-lady-and-the-tramp-hero.png",
+        thumbnail: "spaghetti-from-lady-and-the-tramp.jpeg",
+        intro: "During the summer, they worked hard: they trained to jump from hats to scarves, to hold on to ringlets, to swing from barrettes to elastic bands. They sow discord in very quiet classes, they terrorize teachers with long hair.",
+        content: "What are we eating tonight ?  The most famous spaghetti in the world: those of Lady and the Tramp. It's dumplings, isn't it? Here is the recipe, served with its al dente anecdotes. Ingredients For the dumplings: Exactly, speaking of dumplings: the legendary dinner scene between Lady and Tramp almost never existed! Walt Disney was not convinced by the first sketches. Screenwriter Frank Thomas was a firm believer in this and decided to draw and animate the scene before showing it to Walt Disney. Bingo, it worked! - about 400 gr of meat (depending on your tastes, it can be only beef, a beef / veal mix, in a veggie version with lentils, red beans, cauliflower, tofu etc.) - 25 gr of stale bread (or breadcrumbs) - 1 glass of milk - 15-20 gr of grated parmesan (according to your tastes too, we tend to always add more) - 1 egg - 2 tablespoons of flour - 1 knob of butter - the inseparable duo: salt, pepper Ps: you can also add thyme, bay leaf, parsley... as you like! For the rest: The character of Lady, Beauty, is inspired by Joe Grant's pretty Cocker Spaniel dog, and Clochard is inspired by a real abandoned dog who had found refuge in the Disney studios. It was even the screenwriter of Sleeping Beauty and Cinderella who finally adopted it! - 400 gr of spaghetti - 800 gr of tomato pulp - 1 onion - 1 clove of garlic - olive oil - herbs (if you want)",
+        contentImages: [],
+        author: { name: "My Little Kids", authorLink: "https://www.mylittlekids.fr/" },
+        source: "https://www.mylittlekids.fr/manger/spaghettis-belle-et-le-clochard-disney-recette",
+        time: "N/A"
+    },
+    {
+        id: "BZ04",
         title: "What a stupid city!",
         hero: "what-a-stupid-city-hero.png",
         thumbnail: "what-a-stupid-city.jpeg",
@@ -75,22 +87,10 @@ const featuredBlogs = [
         time: "N/A"
     },
     {
-        id: "BZ04",
-        title: "The battle of the schools",
-        hero: "the-battle-of-the-schools-hero.png",
-        thumbnail: "the-battle-of-the-schools.png",
-        intro: "We have put aside their bestsellers for you to learn while having fun: books on great historical figures, super fun encyclopedias, friezes to decorate the courtyard, games to memorize the major events of our history.",
-        content: "GET READY TO MAKE A FUSS! Expired. Notice to all parents of students who read us: warm up the class whatsapp and the FCPE email loop! The My Little Kids School Battle is back and this year, we're offering you nearly €200 worth of fun and educational books, games and posters for the whole school. We give you the topo?  For this new edition of our School Battle,  we are partnering with Quelle Histoire, the small publishing house that makes you want to discover History with a capital H.We have put aside their bestsellers for you to learn while having fun: books on great historical figures, super fun encyclopedias, friezes to decorate the courtyard, games to memorize the major events of our history... To pocket the jackpot for your school, it's simple: you create your team in the name of your school and you share it as much as possible. The more you are, the more you climb in the ranking. The first 3 schools win! And so that it's super easy to share, we've planned everything: poster to stick on the panel at the entrance to the school, small sheet to slip into the correspondence book, link to share directly with friends... Prepare you, this Battle, we're going to make a lot of history!",
-        contentImages: [],
-        author: { name: "My Little Kids", authorLink: "https://www.mylittlekids.fr/" },
-        source: "https://www.mylittlekids.fr/lire-grandir/battle-ecole-concours-cadeau-livre-jeu-pedagodique-quelle-histoire",
-        time: "N/A"
-    },
-    {
         id: "BZ05",
         title: "What you need to know about Lilibeth",
-        hero: "what-you-need-to-know-about-lilibeth.jpeg",
-        thumbnail: "what-you-need-to-know-about-lilibeth.jpeg",
+        hero: "",
+        thumbnail: "what-you-need-to-know-about-lilibeth.png",
         intro: "She had the truck license but did not have a passport. She's had over 30 corgis, she's shook hands with the Spice Girls, Churchill, Elton John and even James Bond. Yesterday was the funeral of the most famous grandmother in the world.",
         content: "She had the truck license but did not have a passport. She's had over 30 corgis, she's shook hands with the Spice Girls, Churchill, Elton John and even James Bond. Yesterday was the funeral of the most famous grandmother in the world. And because we don't always have the answer to \"why the English have a queen and not a president?\", \"is the crown heavy?\", we have unearthed some sources of... royal information.",
         contentImages: [""],
@@ -255,18 +255,6 @@ const featuredBlogs = [
     },
     {
         id: "BZ18",
-        title: "Immersive show in a wood",
-        hero: "",
-        thumbnail: "immersive-show-in-a-wood.jpeg",
-        intro: "Where is this woman running? You don't want to follow her? Wait, you forgot your headphones. It's okay, is it on your ears? Press On , take a deep breath. Here it begins.",
-        content: "Where is this woman running? You don't want to follow her? Wait, you forgot your headphones. It's okay, is it on your ears? Press On , take a deep breath. Here it begins. It is in the Bois de Vincennes that the first wild and immersive show will take place this weekend: the company Vivre dans le Feu invites you to a traveling theater play in the middle of the trees, on a story by Maupassant, whose words have never been so ... passers-by: you will follow this mysterious young woman while listening to her story through headphones, like in a video game. She will pass this way, she will pass this way. Sometimes, if she gets lost, you'll have to run to catch her. Theater and jogging: the new combo.",
-        contentImages: [""],
-        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
-        source: "https://www.mylittleparis.com/balades/randonnee-spectacle-dans-les-bois",
-        time: "June 28, 2021"
-    },
-    {
-        id: "BZ19",
         title: "I didn't have the codes to face Paris",
         hero: "Each month, My Little Paris publishes a way of experiencing Paris, shared by a Parisian. For this new column, we give the pen to Victor Habchy, content creator who became known on Social Networks by asking intimate questions to strangers in the streets of Paris.",
         thumbnail: "i-didn't-have-the-codes-to-face-paris.png",
@@ -278,7 +266,7 @@ const featuredBlogs = [
         time: "February 28, 2023"
     },
     {
-        id: "BZ20",
+        id: "BZ19",
         title: "1 dinner, 6 women",
         hero: "",
         thumbnail: "1-dinner-6-women.jpeg",
@@ -288,6 +276,18 @@ const featuredBlogs = [
         author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
         source: "https://www.mylittleparis.com/resto-bars-ou-manger/diner-and-the-table-paris",
         time: "March 03, 2023"
+    },
+    {
+        id: "BZ20",
+        title: "Neni - The kitchen of the Israeli mamma",
+        hero: "",
+        thumbnail: "neni-the-kitchen-of-the-israeli-mamma.png",
+        intro: "The one in Berlin sets the city on fire. That of Tel-Aviv is always shielded. Wherever a Neni opens, the savvy forks turn up. It's finally the Parisians' turn to completely forget about Ottolenghi and go crazy for the cuisine of Haya and her four grown-up sons.",
+        content: "The one in Berlin sets the city on fire. That of Tel-Aviv is always shielded. Wherever a Neni opens, the savvy forks turn up. It's finally the Parisians' turn to completely forget about Ottolenghi and go crazy for the cuisine of Haya and her four grown-up sons. The chef, a real mamma version of Israel, has just installed her spicy casseroles at the “25hours”. The hotel opened discreetly between Christmas and New Year, there is still no one there. Miracle. More would be too much. And yet, we also loved it all: - the cozy little-sofa-corner to sink your buttocks into - the sweet appetizer labne* and the hummus roll-yourself-in-immediately - the streetfood star Israeli: sabish- the completely kitsch elevator in cracked gold - the rococo lounge in the toilets - the babaganoush to overturn the velvet armchairs - the sapeur atmosphere bar where to end the evening with a DJ set that Berlin would not blush about... better is that we give you the address and you go there. Quickly. It's right in front of the Gare du Nord and after that there won't be any more places the rest of the year.",
+        contentImages: [""],
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/mosaiques/les-meilleurs-restaurants-de-paris#chiquitin-le-fief-de-la-street-food-mexicaine",
+        time: "N/A"
     },
     {
         id: "BZ21",
@@ -304,33 +304,21 @@ const featuredBlogs = [
     },
     {
         id: "BZ22",
-        title: "Budding critics",
+        title: "Saturday is the 45 rpm",
         hero: "",
-        thumbnail: "budding-critics.jpeg",
-        intro: "Have you ever seen... a duck that didn't like water? A giraffe that had a stiff neck? A mute parrot? No ? Not even a mole that could see super far? Peanuts? So come closer, we present to you the latest exclusive members of the Riquiqui Reading Club.",
-        content: "Have you ever seen... a duck that didn't like water? A giraffe that had a stiff neck? A mute parrot? No ? Not even a mole that could see super far? Peanuts? So come closer, we present to you the latest exclusive members of the Riquiqui Reading Club. Some time ago, we recruited a panel of children ready to do battle with the bedtime stories found in McDonald's Happy Meal. The goal? Submit the 7 stories to their clear, spontaneous, incisive opinions (well, we asked their parents a little too). Result ? Our mini literary critics have spoken, and you can find all their opinions directly on the Riquiqui Reading Club. As a bonus, we have even planned a catch-up contest if you missed all these great adventures! And if the circle of little poets had not completely disappeared?",
+        thumbnail: "saturday-is-the-45-rpm.png",
+        intro: "Calling all diggers at heart: Saturday, rush to La Cuve à Son , in the 12th arrondissement, because at Christophe's, the Disquaire day* is \"every day\".",
+        content: "Calling all diggers at heart: Saturday, rush to La Cuve à Son , in the 12th arrondissement, because at Christophe's, the Disquaire day* is \"every day\". The den of this epicurean music lover, recognizable by its cyan blue frontage, ticks all the boxes of the record store: posters on the wall, vinyl records and audio cassettes scattered from floor to ceiling… and a few boutanches in the middle of it all. Trained by a Crillon sommelier, Christophe has a dual role as a record store and wine merchant: this season, he is offering instant beers , brewed in Seine-et-Marne. The perfect spot to kill two birds with one stone: unearth an original cuvée AND turn heads around the record player. What surround his ears and his weekend.",
         contentImages: [""],
-        author: { name: "My Little Kids", authorLink: "https://www.mylittlekids.fr/" },
-        source: "https://www.mylittlekids.fr/lire-grandir/riquiqui-club-lecture-mcdonalds-livres-avis-bonus",
-        time: "N/A"
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/resto-bars-ou-boire/disquaire-day-cuve-a-son",
+        time: "April 22, 2022"
     },
     {
         id: "BZ23",
-        title: "Neni - The kitchen of the Israeli mamma",
-        hero: "",
-        thumbnail: "neni-the-kitchen-of-the-israeli-mamma.jpeg",
-        intro: "The one in Berlin sets the city on fire. That of Tel-Aviv is always shielded. Wherever a Neni opens, the savvy forks turn up. It's finally the Parisians' turn to completely forget about Ottolenghi and go crazy for the cuisine of Haya and her four grown-up sons.",
-        content: "The one in Berlin sets the city on fire. That of Tel-Aviv is always shielded. Wherever a Neni opens, the savvy forks turn up. It's finally the Parisians' turn to completely forget about Ottolenghi and go crazy for the cuisine of Haya and her four grown-up sons. The chef, a real mamma version of Israel, has just installed her spicy casseroles at the “25hours”. The hotel opened discreetly between Christmas and New Year, there is still no one there. Miracle. More would be too much. And yet, we also loved it all: - the cozy little-sofa-corner to sink your buttocks into - the sweet appetizer labne* and the hummus roll-yourself-in-immediately - the streetfood star Israeli: sabish- the completely kitsch elevator in cracked gold - the rococo lounge in the toilets - the babaganoush to overturn the velvet armchairs - the sapeur atmosphere bar where to end the evening with a DJ set that Berlin would not blush about... better is that we give you the address and you go there. Quickly. It's right in front of the Gare du Nord and after that there won't be any more places the rest of the year.",
-        contentImages: [""],
-        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
-        source: "https://www.mylittleparis.com/mosaiques/les-meilleurs-restaurants-de-paris#chiquitin-le-fief-de-la-street-food-mexicaine",
-        time: "N/A"
-    },
-    {
-        id: "BZ24",
         title: "Like a snowflake on the tongue",
         hero: "",
-        thumbnail: "like-a-snowflake-on-the-tongue-3.png",
+        thumbnail: "like-a-snowflake-on-the-tongue.png",
         intro: "Hot outside? Cold inside! That ice melts instantly like a snowflake on your tongue. We found it a few sweats from the Place de la Bastille: at Bältis, the new ice cream parlor in the Marais.",
         content: "Hot outside? Cold inside! That ice melts instantly like a snowflake on your tongue. We found it a few sweats from the Place de la Bastille: at Bältis, the new ice cream parlor in the Marais. On the face of it, it looks like cotton candy. In terms of sensation in the mouth, with angel hair that is more airy because stretched by hand, which comes to style the organic ice creams and sorbets that the two cousins ​​Nadim and Jean-Michel, creators of Bältis, imagined with the help of a MOF*. Traditionally in Lebanon, we eat this thin dough, made from flour and sugar, to accompany coffee or tea, but also as a topping on ice cream. What is this sweet Lebanese cotton called? \"Ghazel el banet\", which means \"charm of women\". The tastes to try first? Orange blossom cream, intense chocolate, apricot and rose water... the Orient in an ice cream cone.",
         contentImages: [""],
@@ -339,7 +327,7 @@ const featuredBlogs = [
         time: "July 15, 2022"
     },
     {
-        id: "BZ25",
+        id: "BZ24",
         title: "Ho ho ho",
         hero: "",
         thumbnail: "ho-ho-ho.jpeg",
@@ -351,19 +339,7 @@ const featuredBlogs = [
         time: "November 29, 2021"
     },
     {
-        id: "BZ26",
-        title: "The Orgasmic Roll",
-        hero: "",
-        thumbnail: "the-orgasmic-roll.png",
-        intro: "Everything born in New York lands in Paris one day. Like the New York Roll, which appeared one fine autumn day in the window of the BO&MIE bakery, and has already been devoured by thousands of Parisians.",
-        content: "Everything born in New York lands in Paris one day. Like the New York Roll, which appeared one fine autumn day in the window of the BO&MIE bakery, and has already been devoured by thousands of Parisians. It has to be said that it has quite a pretty face, this round croissant, with its bronze color and dripping chocolate sauce on a puff pastry and caramelized. At the first croc, we stained our sweater as if we were 4 years old. On the second, oh surprise: unexpected explosion of vanilla cream in the mouth, hidden in the heart of the Roll . On the third, hands lined with cream and mouth smeared with chocolate. We looked smart. But fulfilled. “New York Roll”: ephemeral creation by BO&MIE, €4.20. 18 rue de Turbigo, Paris 2nd, 359 rue Saint-Martin, Paris 3rd or 91 rue de Rivoli, Paris 1st. Attention, batch limited to 30 New York Rolls per day!",
-        contentImages: [""],
-        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
-        source: "https://www.mylittleparis.com/resto-bars-ou-manger/new-york-roll-boetmie",
-        time: "November 8, 2022"
-    },
-    {
-        id: "BZ27",
+        id: "BZ25",
         title: "8 pancake recipes for Candlemas",
         hero: "",
         thumbnail: "8-pancake-recipes-for-candlemas.jpeg",
@@ -375,16 +351,100 @@ const featuredBlogs = [
         time: "N/A"
     },
     {
-        id: "BZ28",
+        id: "BZ26",
         title: "Castle life!",
         hero: "",
-        thumbnail: "castle-life.jpeg",
+        thumbnail: "castle-life.png",
         intro: "Holidays are an opportunity to set sail in terms of kilometers... but why not also centuries? We have therefore programmed three trips back in time to the four corners of France for escapes with brave knights and unassuming princesses. Get on your proud steed (yes, your car...) and go!",
         content: "Holidays are an opportunity to set sail in terms of kilometers... but why not also centuries? We have therefore programmed three trips back in time to the four corners of France for escapes with brave knights and unassuming princesses. Get on your proud steed (yes, your car...) and go! -The beloved castle of Mads Mikkelsen Between these walls were shot many scenes of \"Michael Koohlhas\", with the sublime Mads Mikkelsen. Located in the Gard, this 12th century castle with its breathtaking view takes you back to the Middle Ages. Marlène, the adorable owner, welcomes you admirably and offers coat of arms or parchment workshops for children. Don't forget to book for our undisputed favourite!, 30450 Aujac. Tel: 04.66.61.19.94 -An enchanted castle 35 kilometers from Paris, the castle of Breteuil celebrates the world of Charles Perrault. At the Lavoir, you will meet Peau-d'Âne, in the old kitchens, the Belle-au-Bois-Dormant. Guided tours are offered for children and a guide for them can be downloaded from the site. A picnic and playground area is also available. Regal, right? The castle of Breteuil , alley of the Castle, 78640 Choisel. Tel: 01 30 52 05 11 - Donkey Skin CastleThis is where Jacques Demy's \"Donkey Skin\" was partially filmed. A few kilometers from Angers, the castle of Plessis-Bourré offers for 6-12 year olds a \"Mitrons and minstrels\" activity around medieval cuisine. Don't miss the alchemical garden either! Château du Plessis-Bourré , 49640 Ecuillé. Phone: 02 41 32 06 72",
         contentImages: [""],
         author: { name: "My Little Kids", authorLink: "https://www.mylittlekids.fr/" },
         source: "https://www.mylittlekids.fr/voyager/selection-plus-beaux-chateaux-france-aujac-breteuil-plessis-bourre",
         time: "N/A"
+    },
+    {
+        id: "BZ27",
+        title: "The belly of Paris",
+        hero: "",
+        thumbnail: "the-belly-of-paris.png",
+        intro: "There are days when we are a little tired of the Parisian effervescence. We want authenticity, consistency, small neighborhood routines. On these days, go for a walk in the 12th at the end of the morning. Walk along the Faubourg Saint Antoine then take the rue de Cotte. So far everything is calm.",
+        content: "There are days when we are a little tired of the Parisian effervescence. We want authenticity, consistency, small neighborhood routines. On these days, go for a walk in the 12th at the end of the morning. Walk along the Faubourg Saint Antoine then take the rue de Cotte. So far everything is calm. But at the end, at the very end, something is going on. It's the belly of Paris that is stirring: welcome to the Marché d'Aligre. Traders sell the best gourmet products at auction. The baskets are filled with colorful and fragrant stalls with juicy oranges and wild strawberries, melting Bellota ham and Provençal olives... at very low prices. Under the covered market, at Philippe's, you can find almost all the 1000 cheeses of France! Ultimate pleasure after the market, meet at the Baron Rouge, the emblematic wine bar of popular Paris to devour on barrels of charcuterie boards and Corsican cheese around a small glass of white wine. Sunday especially, it's the village atmosphere: it overflows on the sidewalks, everyone seems to know each other, a frenzied neighborhood brass band punctuates the cadence of passers-by, plates of oysters pass through their hands and bottles of Sancerre are placed on the hoods of cars. Unmissable meeting to taste the atmosphere of the village of Aligre! Le Baron Rouge. 1 rue Théophile Roussel au Marché d'Aligre Place d'Aligre 75 012 Paris Metro Ledru Rollin. Open daily from 10am to 10pm and Sunday until 4pm",
+        contentImages: [""],
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/resto-bars-ou-boire/le-ventre-de-paris",
+        time: "June 26, 2010"
+    },
+    {
+        id: "BZ28",
+        title: "Budding critics",
+        hero: "",
+        thumbnail: "budding-critics.png",
+        intro: "Have you ever seen... a duck that didn't like water? A giraffe that had a stiff neck? A mute parrot? No ? Not even a mole that could see super far? Peanuts? So come closer, we present to you the latest exclusive members of the Riquiqui Reading Club.",
+        content: "Have you ever seen... a duck that didn't like water? A giraffe that had a stiff neck? A mute parrot? No ? Not even a mole that could see super far? Peanuts? So come closer, we present to you the latest exclusive members of the Riquiqui Reading Club. Some time ago, we recruited a panel of children ready to do battle with the bedtime stories found in McDonald's Happy Meal. The goal? Submit the 7 stories to their clear, spontaneous, incisive opinions (well, we asked their parents a little too). Result ? Our mini literary critics have spoken, and you can find all their opinions directly on the Riquiqui Reading Club. As a bonus, we have even planned a catch-up contest if you missed all these great adventures! And if the circle of little poets had not completely disappeared?",
+        contentImages: [""],
+        author: { name: "My Little Kids", authorLink: "https://www.mylittlekids.fr/" },
+        source: "https://www.mylittlekids.fr/lire-grandir/riquiqui-club-lecture-mcdonalds-livres-avis-bonus",
+        time: "N/A"
+    },
+    {
+        id: "BZ29",
+        title: "The Orgasmic Roll",
+        hero: "",
+        thumbnail: "the-orgasmic-roll.png",
+        intro: "Everything born in New York lands in Paris one day. Like the New York Roll, which appeared one fine autumn day in the window of the BO&MIE bakery, and has already been devoured by thousands of Parisians.",
+        content: "Everything born in New York lands in Paris one day. Like the New York Roll, which appeared one fine autumn day in the window of the BO&MIE bakery, and has already been devoured by thousands of Parisians. It has to be said that it has quite a pretty face, this round croissant, with its bronze color and dripping chocolate sauce on a puff pastry and caramelized. At the first croc, we stained our sweater as if we were 4 years old. On the second, oh surprise: unexpected explosion of vanilla cream in the mouth, hidden in the heart of the Roll . On the third, hands lined with cream and mouth smeared with chocolate. We looked smart. But fulfilled. “New York Roll”: ephemeral creation by BO&MIE, €4.20. 18 rue de Turbigo, Paris 2nd, 359 rue Saint-Martin, Paris 3rd or 91 rue de Rivoli, Paris 1st. Attention, batch limited to 30 New York Rolls per day!",
+        contentImages: [""],
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/resto-bars-ou-manger/new-york-roll-boetmie",
+        time: "November 8, 2022"
+    },
+    {
+        id: "BZ30",
+        title: "Santa's Inn",
+        hero: "",
+        thumbnail: "santas-inn.gif",
+        intro: "“Dear Father Christmas, when you do your rounds of chimneys, don't you dare go down to the one at 28 rue de Turin: you risk landing on a hot rib of beef. Because  yes, this photo of a country inn was indeed taken in Paris. More precisely in the 8th, at Albert, the owner of the Le Rouge et le Verre wine cellar.",
+        content: "“Dear Father Christmas, when you do your rounds of chimneys, don't you dare go down to the one at 28 rue de Turin: you risk landing on a hot rib of beef. Because  yes, this photo of a country inn was indeed taken in Paris. More precisely in the 8th, at Albert, the owner of the Le Rouge et le Verre wine cellar. It was Sylvie, his bookseller wife, who came up with the name, and it is Albert who officiates in this cellar with 450 wine references from all regions and all faiths: the Nature, festive, everyday, and seasonal. People come here to choose a bottle, or have lunch by the fireplace with one of the dishes cooked with market produce. We come here to share a tender Black Angus rib of beef cooked on the fireplace grill. We come there, and we come back so much, that some regulars even have napkin rings in their name. “Dear Father Christmas, don't go through the fireplace, but remember to reserve one of the two tables just in front. » Le Rouge et le Verre, 28 rue de Turin, 75 008 Paris. Wine cellar and table d'hôtes for lunch and dinner, Monday to Saturday. Black Angus beef rib to share, €35 per person. Reservation on 01 43 87 10 40  (ask for the table in front of the fireplace) Other address (also with a fireplace), 33 rue de Brunel, 75 017 Paris",
+        contentImages: [""],
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/resto-bars-ou-boire/le-rouge-et-le-verre",
+        time: "December 07, 2022"
+    },
+    {
+        id: "BZ31",
+        title: "Buckwheat tea",
+        hero: "",
+        thumbnail: "buckwheat-tea.jpeg",
+        intro: "Breton purists will tell you themselves, a good candlestick is made with buckwheat and a well (well) dosed touch of butter. Nothing more, nothing less.",
+        content: "Breton purists will tell you themselves, a good candlestick is made with buckwheat and a well (well) dosed touch of butter. Nothing more, nothing less. Today, we put buckwheat everywhere. In plates and coffee cups. You know it in flour, but buckwheat is also available in infusion and in Japan, it is called Sobacha . With its slightly bitter coffee-like taste without sugar, sobacha is the detox drink to pick up at Japanese women and bargain hunt at Breizh . To be taken in the morning to boost your inner self and in the evening to find a little calm after dinner. Galette fork in one hand, cup of sobacha in the other. Here is your Parisian Candlemas halfway between Saint-Malo and Tokyo. Prescription infusion-candlemas at the Breizh Café grocery store  111, rue Vieille du Temple, 75003 Paris. Open every day from 10am to 10pm. Sobacha, €12.50 for 100g. Galettes from €8.50. On site, take away or delivery.",
+        contentImages: [""],
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/resto-bars-ou-boire/sobacha-chandeleur-sarrasin",
+        time: "February 01, 2022"
+    },
+    {
+        id: "BZ32",
+        title: "“There is debate”",
+        hero: "",
+        thumbnail: "there-is-debate.gif",
+        intro: "Should a person be warned that they have a piece of lettuce stuck between their teeth? What is the maximum number of items tolerated to ask to pass in front of everyone in the supermarket? Can we applaud when landing on the plane? Our answer to these questions: \"There is debate.\"",
+        content: "Should a person be warned that they have a piece of lettuce stuck between their teeth? What is the maximum number of items tolerated to ask to pass in front of everyone in the supermarket? Can we applaud when landing on the plane? Our answer to these questions: \"There is debate.\" Inspired by the very judicious \"How To Behave\" of New York Mag, about the new codes of life of the post-Covid era, the My Little Paris team gathered around a table to discuss new unspoken rules of Parisian life: metro, professional life, social networks... What's ok? What is not done? 130 topics we ask here. The debates are open.",
+        contentImages: [""],
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/vies-parisiennes/y-a-debat",
+        time: "May 05, 2023"
+    },
+    {
+        id: "BZ33",
+        title: "3 hot coffees to take away",
+        hero: "",
+        thumbnail: "3-hot-coffees-to-take-away.png",
+        intro: "In these freezing weather and closed cafes, the only thing left to do is to take them away. Hot, latte, turmeric, chaï, tight, oatmeal, cocoa... 3 sidewalk cafés for a stroll with friends or a date on the go in Paris.",
+        content: "Of course you have to climb: we are in Montmartre! But it's so worth the effort to climb up to this \"Melbourne à Montmartre\" atmosphere café, to order a Golden Latte or a Piccolo Latte with hazelnuts. The baristas to greet: Fred and Charlotte. To take away in the other hand: a chocolate-praline shortbread. Le Café-Tabac  , 1bis Rue Ravignan, 75018 Paris, €2 for an espresso, Monday to Friday from 8:30 a.m. to 1 p.m., weekends from 9 a.m. to 3 p.m. can choose your milk: cow, soy, oats, almond, hazelnut. Boulevard des filles du Calvaire, a Breton canteen has just opened its eyes: the Joa café, which means \"joy\" in Breton, where Anne-Charlotte, fresh out of her training at the Lomi roasting school, prepares smooth filter coffees and full-bodied espressos. The barista to greet: Anne-Charlotte. To take away in the other hand:  the brioche bread-buns or the dark-chocolate cookies and mashed cashew nuts. Café Joa , 20 boulevard des filles du Calvaire, 75003 Paris, €2.50 for an espresso, open 8:30 a.m. to 5 p.m. Monday to Friday, 10 a.m. to 5 p.m. Saturday and Sunday. Closed on Tuesdays. It's not just coffee lovers in life: the passionate tea hunters at Chez Thé-ritoires offer tea to take away every week. There was black tea from Malawi, Chinese green tea, and from Monday we're betting everything on Early Grey. The Théristas to salute (no, this word does not yet exist): Arnaud and Maxime. To take away in the other hand : the scone, 5€ for both. Thé-ritoires, 5 Rue de Condé, 75006 Paris, open Tuesday to Saturday 10:30 a.m. to 5:45 p.m., €4 for tea and €3.50 if you bring your own cup. And if you miss the sound of Parisian cafes, listen to it here in our playlist of the sounds of Paris that we have forgotten.",
+        contentImages: [""],
+        author: { name: "My Little Paris", authorLink: "https://www.mylittleparis.com/" },
+        source: "https://www.mylittleparis.com/resto-bars-ou-boire/cafe-joa",
+        time: "February 12, 2021"
     },
 
 
@@ -405,9 +465,9 @@ const featuredBlogs = [
 const aboutContent = "Ablaze Blog is an online digital blogging platform where you can share your unique, memorable experience with your family, friends, and other people across the world.";
 const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 const popularAuthors = [
+    { name: "Emilia", points: 89000, image: "emilia.png" },
     { name: "Balancer", points: 100000, image: "thebalancer.png" },
-    { name: "Rem", points: 89000, image: "rem.png" },
-    { name: "Emilia", points: 78000, image: "emilia.png" },
+    { name: "Rem", points: 78000, image: "rem.png" },
     { name: "Zolrath", points: 10000, image: "zolrath.png" },
     { name: "Yennefer", points: 9600, image: "yennefer.png" },
     { name: "Geralt", points: 8500, image: "geralt.png" },
@@ -441,7 +501,7 @@ app.get("/", (req, res) => {
     // res.send("Ablaze");
     const todayDate = date.getDate();
 
-    res.render("blogs", { 
+    res.render("home", { 
         homeContent: homeStartContent, 
         featuredBlog: featuredBlogs, 
         blogpostPost: blogpostPosts, 
@@ -584,7 +644,7 @@ app.post("/new-blog-name", (req, res) => {
 });
 
 app.get("/my-account", (req, res) => {
-    res.render("my-account", { blogpostPost: blogpostPosts});
+    res.render("user-account", { blogpostPost: blogpostPosts});
 });
 
 

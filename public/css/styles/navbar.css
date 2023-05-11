@@ -1,0 +1,158 @@
+.blaze-navbar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: saturate(180%) blur(30px);
+    border-color: #fff;
+    box-shadow: 5px 5px 8px -2px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.blaze-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: auto ;
+    padding: 5px 10px;
+}
+
+/* .blaze-brand:hover .blaze-brand-name {
+    color: #524d70;
+} */
+
+.nav-home-link {
+    display: flex;
+    align-items: center;
+    transition: all .15s ease;
+}
+
+.nav-home-link:hover {
+    text-decoration: none;
+}
+
+.nav-home-link:hover .blaze-nav-logo {
+    transform: rotate(-15deg);
+}
+
+.navbar-brand-name {
+    display: flex;
+    align-items: center;
+} 
+
+.blaze-nav-logo {
+    border-radius: 50%;
+    display: inline-block !important;
+    margin-right: 12px;
+    transition: all .3s ease;
+    width: 36px;
+}
+
+.blaze-brand-name {
+    color: #333;
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: -2px;
+    transition: all .3s ease;
+}
+
+.nav-brand-separator {
+    color: #ccc;
+    font-weight: 200;
+    padding: 0 9px;
+    margin-left: 5px;
+}
+
+.brand-desc {
+    color: #909090;
+    font-size: 13.5px;
+    font-weight: 300;
+    letter-spacing: 0.375px;
+    margin-left: 16px;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-menu a {
+    color: #777;
+    cursor: pointer;
+}
+
+.navbar-menu a:hover {
+    text-decoration: none;
+}
+
+.navbar-menu a:hover .navbar-menu-item {
+    background-color: rgba(220, 220, 220, 0.5);
+    color: #6e65a0;
+}
+
+.navbar-menu a:hover .navbar-menu-item i {
+    color: #6e65a0;
+}
+
+.navbar-menu a:hover .navbar-menu-item.button {
+    background-color: #665aae;
+    border: 1px solid #665aae;
+    color: white;
+}
+
+.navbar-menu a:active .navbar-menu-item.button {
+    background-color: #5a4f9f;
+    border: 1px solid #5a4f9f;
+    color: white;
+}
+
+.navbar-menu-item {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    color: #333;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    margin: 1px 0;
+    padding: 10px 12px;
+    transition: all .2s ease;
+}
+
+.navbar-menu-item i {
+    font-size: 14.5px;
+    margin-right: 10px;
+    color: rgb(147 144 160 / 70%);
+    transition: all .2s ease;
+}
+
+.navbar-menu a.nav-menu-separator {
+    cursor: unset;
+}
+
+.navbar-menu a.nav-menu-separator:hover .navbar-menu-item {
+    background-color: transparent;
+}
+
+.navbar-menu a.nav-menu-separator .navbar-menu-item {
+    color: #b0b0b0;
+    font-weight: 300;
+    padding: 10px 6px;
+}
+
+.navbar-menu-item.button {
+    background-color: #796ebe;
+    border: 1px solid #796ebe;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .375px;
+    margin: 0 0 0 12px;
+    padding: 10px 14px;
+}
+
+.navbar-menu-item.button i {
+    font-size: 13px;
+    margin-right: 8px; 
+}

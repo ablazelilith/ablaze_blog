@@ -1,0 +1,40 @@
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    margin-top: -40px;
+    margin-bottom: 18px;
+}
+
+footer .container {
+    padding-top: 60px;
+}
+
+footer p {
+    color: rgb(0 0 0 / 40%);
+    font-size: 13.5px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+.footer-link {
+    margin-right: 14px;
+    color: rgb(0 0 0 / 50%);
+    font-weight: 500;
+    font-size: 13.5px;
+}
+
+footer .separator {
+    opacity: .25;
+    margin: 0 2px;
+}
+
+.app-creator {
+    font-weight: 500;
+    color: rgb(0 0 0 / 50%);
+    margin-right: 4px;
+}

@@ -1,0 +1,120 @@
+.new-blog {
+    display: flex;
+    /* align-items: center; */
+    align-items: end;
+    border-bottom: 1px dotted #b4b4b4;
+    margin-bottom: 32px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+/* .users-blog-name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+} */
+
+.new-blog .users-blog-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 89%;
+}
+
+.new-blog .users-blog-name label {
+    margin-bottom: 10px;
+}
+
+.new-blog .main-button {
+    width: 11%;
+    margin-left: 26px;
+}
+
+.new-post-form {
+    margin-bottom: 1rem;
+}
+
+.new-post-form label {
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #444;
+    letter-spacing: .625px;
+}
+
+.blogpost-author-and-external-link {
+    display: flex;
+    margin-bottom: 42px;
+}
+
+.blogpost-external-link-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 71%;
+    margin-left: 26px;
+}
+
+.blogpost-author-wrap {
+    width: 29%;
+}
+
+.blogpost-content-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 26px 0;
+}
+
+.blogpost-title, .blogpost-author, .blogpost-author-link {
+    width: 100%;
+    border: none;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 15px;
+    color: #515151;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.blogpost-textarea {
+    max-width: 100%;
+    height: 360px;
+    border: none;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 15px;
+    color: #515151;
+    line-height: 1.5;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border: 2px solid #978dc3; 
+    box-shadow: 5px 5px 10px -2px rgba(103, 90, 174, 0.25);
+}
+
+input::placeholder, textarea::placeholder {
+    color: #a4a4a4;
+    color: #b3b3b3;
+}
+
+::-webkit-file-upload-button{
+    color: #796ebe;
+    border: 1px solid #796ebe;
+    background-color: transparent;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all .1s ease;
+    letter-spacing: .25px;
+    height: fit-content;
+    margin-right: 12px;
+
+    background-color: #796ebe;
+    border: 1px solid #796ebe;
+    color: white;
+}
+
+.blogpost-image-file-wrap {
+    margin: 32px 0 28px;
+}
