@@ -1,7 +1,7 @@
 <%- include("partials/header.ejs"); %>
 
 <div class="page-header">
-    <h1 class="page-header-title">World's Blogs</h1>
+    <h1 class="page-header-title">Latest Blogs</h1>
 </div>
 
 <div class="blog-category mb-0">
@@ -19,13 +19,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="blogs/<%= featuredBlog[0].thumbnail %>" class="d-block w-100" alt="...">
+            <img src="blogs/<%= blogPosts[0].thumbnail %>" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="blogs/<%= featuredBlog[1].thumbnail %>" class="d-block w-100" alt="...">
+            <img src="blogs/<%= blogPosts[1].thumbnail %>" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="blogs/<%= featuredBlog[2].thumbnail %>" class="d-block w-100" alt="...">
+            <img src="blogs/<%= blogPosts[2].thumbnail %>" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -46,7 +46,7 @@
     
     <div class="blog-post-group featured-blogs">
 
-        <%- include("partials/featured-blog-posts.ejs"); %>
+        <%- include("partials/blogposts.ejs"); %>
 
     </div>
 

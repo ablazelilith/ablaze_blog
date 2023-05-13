@@ -1,0 +1,53 @@
+<% for (var i = 0; i < blogposts.length; i++) { %>
+    <div class="blog-post horizontal">
+
+        <div class="blog-post-image-cover">
+            <img src="blogs/<%= blogposts[i].thumbnail %>" class="blog-post-image" alt="<%= blogposts[i].title %> image">
+        </div>
+
+        <div class="blog-post-content">
+            <div class="blog-post-header-and-body-wrap">
+                <div class="blog-post-header">
+                    <h3 class="blog-post-title"><%= blogposts[i].title %></h3>
+                    <!-- <div class="blog-post-id">
+                        <span>ID <span class="blog-post-id-text"><%= blogposts[i].id %></span></span>
+                    </div> -->
+                </div>
+                <div class="blog-post-body">
+                    <p><%= blogposts[i].intro %></p>
+                    <!-- <% if (blogposts[i].contentImages.length > 0) { %>
+                        <img src="blogs/<%= blogposts[i].contentImages[0] %>" alt="<%= blogposts[i].title %>" class="blog-post-content-image">
+                    <% } %> -->
+                    <!-- <p class="blog-post-source">Source: <a href="<%= blogposts[i].source %>" target="_blank" rel="noopener noreferrer"><%= blogposts[i].source %></a></p> -->
+                </div>
+            </div>
+            <div class="blog-post-footer-wrap">
+                <div class="blog-post-footer">
+                    <p class="author">
+                        <span class="by">By</span> 
+                        <% if (blogposts[i].author.name === "" ) { %> 
+                            <span class="anonymous-author">Anonymous</span>
+                        <% } else if (blogposts[i].author.authorLink !== "") { %> 
+                            <a href="<%= blogposts[i].author.authorLink %>" target="_blank" rel="noopener noreferrer" class="author-link"><%= blogposts[i].author.name %></a>
+                        <% } else { %>                  
+                            <span class="nolink-author"><%= blogposts[i].author.name %></span>
+                        <% } %>
+                    </p>                        
+                    <div class="date-and-blogpost-id">
+                        <p class="date">
+                            <% if (blogposts[i].time === "" ) { %> 
+                                <span class="not-available">N/A</span>
+                            <% } else { %>
+                                <%= blogposts[i].time %>
+                            <% } %>
+                        </p>
+                        <p class="blog-post-id">, 
+                            <span>Post ID<span class="blog-post-id-text"><%= blogposts[i].id %></span></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<% } %>
