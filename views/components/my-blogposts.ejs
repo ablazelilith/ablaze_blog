@@ -1,57 +1,52 @@
-<% for (var i = (blogpostPost.length - 1); i >= 0; i--) { %>
+<% for (var i = (userposts.length - 1); i >= 0; i--) { %>
+
+    <!-- <a href="/myblog/<%= userposts[i].title %>"> -->
+
     <div class="blog-post horizontal">
 
-        <!-- <img src="<%= postImage[i] %>" alt="<%= homeContent.title %>"> -->
         <div class="blog-post-image-cover">
-            <img src="./uploads/<%= postImage[i] %>" class="blog-post-image" alt="New uploaded image">
+            <img src="./uploads/<%= userposts[i].image %>" class="blog-post-image" alt="New uploaded image">
         </div>
 
         <div class="blog-post-content">
             <div class="blog-post-header-and-body-wrap">
                 <div class="blog-post-header">
-                    <h3 class="blog-post-title"><%= blogpostTitle[i] %></h3>
-                    <!-- <div class="blog-post-id">
-                        <span>ID <span class="blog-post-id-text">BZG<%= blogpostID[i] %></span></span>
-                    </div> -->
+                    <h3 class="blog-post-title"><%= userposts[i].title %></h3>
                 </div>
                 <div class="blog-post-body">
-                    <p><%= blogpostPost[i] %></p>
+                    <p><%= userposts[i].overview %><a href="/myblog/<%= userposts[i].title %>" class="blog-post-read-more">Read more</a></p>
                 </div>
             </div>
             <div class="blog-post-footer-wrap">
                 <div class="blog-post-footer">
                     <p class="author">
                         <span class="by">By</span> 
-                        <% if (blogpostAuthor[i] === "" ) { %> 
+                        <% if (userposts[i].author === "" ) { %> 
                             <span class="anonymous-author">Anonymous</span>
-                        <% } else if (authorContactLink[i] !== "") { %> 
-                            <a href="<%= authorContactLink[i] %>" target="_blank" rel="noopener noreferrer" class="author-link"><%= blogpostAuthor[i] %></a>
+                        <% } else if (userposts[i].authorLink !== "") { %> 
+                            <a href="<%= userposts[i].authorLink %>" target="_blank" rel="noopener noreferrer" class="author-link"><%= userposts[i].author %></a>
                         <% } else { %>                  
-                            <span class="nolink-author"><%= blogpostAuthor[i] %></span>
+                            <span class="nolink-author"><%= userposts[i].author %></span>
                         <% } %>
                     </p>
-                    <!-- <p class="date">
-                        <% if (blogpostDate[i] === "" ) { %> 
-                            <span class="not-available">N/A</span>
-                        <% } else { %>
-                            <%= blogpostDate[i] %>
-                        <% } %>
-                    </p> -->
                     <div class="date-and-blogpost-id">
                         <p class="date">
-                            <% if (blogpostDate[i] === "") { %> 
+                            <% if (userposts[i].dateTime === "") { %> 
                                 <span class="not-available">N/A</span>
                             <% } else { %>
-                                <%= blogpostDate[i] %>
+                                <%= userposts[i].dateTime %>
                             <% } %>
                         </p>
                         <p class="blog-post-id">, 
-                            <span>Post ID<span class="blog-post-id-text"><%= blogpostID[i] %></span></span>
+                            <span>Post ID<span class="blog-post-id-text"><%= userposts[i].id %></span></span>
                         </p>
                     </div>
                 </div>
             </div>
-
         </div>
+
     </div>
+
+    <!-- </a> -->
+
 <% } %>

@@ -6,7 +6,7 @@
 
 <!--*-~~~~~✧・*・✧~~~~~-* 🦊🧡 x My Blog x 🧡🦊 *-~~~~~✧・*・✧-~~~~~-*-->
 
-<% if (blogpostPost.length === 0) { %>
+<% if (userposts.length === 0) { %>
 <div class="blog-category">
 
     <div class="category-header">
@@ -54,49 +54,49 @@
         <h2 class="category-title">Featured Blogs</h1>
     </div>
 
-    <%- include("components/blog-carousel.ejs"); %>
+    <%- include("components/featured-blogposts.ejs"); %>
     
     <div class="blog-post-group-two-colomn">
 
         <div class="blog-post">
-            <img src="blogs/<%= blogposts[1].thumbnail %>" class="blog-post-image" alt="Blog post image">
+            <img src="blogs/<%= blogposts[30].thumbnail %>" class="blog-post-image" alt="Blog post image">
             <div class="blog-post-content">
                 <div class="blog-post-header-and-body-wrap">
                     <div class="blog-post-header">
-                        <h3 class="blog-post-title"><%= blogposts[1].title %></h3>
+                        <h3 class="blog-post-title"><%= blogposts[30].title %></h3>
                     </div>
                     <div class="blog-post-body">
-                        <p><%= blogposts[1].intro %></p>
+                        <p><%= blogposts[30].overview %></p>
                     </div>
                 </div>
                 <div class="blog-post-footer-wrap">
                     <div class="blog-post-footer">
                         <p class="author">
-                            <span class="by">By</span><a href="<%= blogposts[1].author.externalLink %>" class="author-link"><%= blogposts[1].author.name %></a>
+                            <span class="by">By</span><a href="<%= blogposts[30].author.externalLink %>" class="author-link"><%= blogposts[30].author.name %></a>
                         </p>
-                        <p class="date"><%= blogposts[1].time %></p>
+                        <p class="date"><%= blogposts[30].time %></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="blog-post">
-            <img src="blogs/<%= blogposts[2].thumbnail %>" class="blog-post-image" alt="Blog post image">
+            <img src="blogs/<%= blogposts[31].thumbnail %>" class="blog-post-image" alt="Blog post image">
             <div class="blog-post-content">
                 <div class="blog-post-header-and-body-wrap">
                     <div class="blog-post-header">
-                        <h3 class="blog-post-title"><%= blogposts[2].title %></h3>
+                        <h3 class="blog-post-title"><%= blogposts[31].title %></h3>
                     </div>
                     <div class="blog-post-body">
-                        <p><%= blogposts[2].intro %></p>
+                        <p><%= blogposts[31].overview %></p>
                     </div>
                 </div>
                 <div class="blog-post-footer-wrap">
                     <div class="blog-post-footer">
                         <p class="author">
-                            <span class="by">By</span><a href="<%= blogposts[2].author.externalLink %>" class="author-link"><%= blogposts[2].author.name %></a>
+                            <span class="by">By</span><a href="<%= blogposts[31].author.externalLink %>" class="author-link"><%= blogposts[31].author.name %></a>
                         </p>
-                        <p class="date"><%= blogposts[2].time %></p>
+                        <p class="date"><%= blogposts[31].time %></p>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
     </div>
 
     <div class="category-button">
-        <a href="/popular-authors">
+        <a href="/favorite-authors">
             <button class="outline-button"><i class="fa-solid fa-magnifying-glass"></i>Discover Authors</button>
         </a>
     </div>  

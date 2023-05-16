@@ -1,0 +1,61 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="page-header">
+    <h1 class="page-header-title"><%= blogName %></h1>
+</div>
+
+
+<!-- /* ===========* 🐱💛( MY BLOG POSTS )💛🐱 *=========== */ -->
+<div class="blog-category mb-0">
+
+    <div class="category-header user-blog">
+        <h2 class="category-title">My Published Posts</h2>
+        <a href="/new-blog">
+            <button class="secondary-button">New Post</button>
+        </a>
+    </div>
+
+    <div class="blog-post-list">
+
+        <% if (userposts.length === 0) { %>
+
+            <div class="blog-post empty-blog">
+                <div class="empty-blog-notice">
+                    <div class="empty-blog-notice-content">
+
+                        <div class="blog-post-header">
+                            <h3 class="blog-post-title"><%= homeContent.title %></h3>
+                        </div>
+
+                        <div class="blog-post-body">
+                            <p class="empty-blog-notice-message"><%= homeContent.content %></p>
+                        </div>
+
+                        <div class="blog-post-footer">
+                            <a href="/new-blog">
+                                <button type="submit" class="main-button">
+                                    <% if (blogName == "My Blog") { %>
+                                    Create Blog
+                                    <% } else { %>
+                                    New Post
+                                    <% } %>
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <img src="images/ablazelilith_original.webp" class="empty-blog-icon" alt="Ablaze Lilith">
+            </div>
+
+        <% } else { %>
+
+            <%- include("components/my-blogposts.ejs"); %>
+
+        <% } %>
+
+    </div>
+
+</div>
+
+<%- include("partials/footer.ejs"); %>

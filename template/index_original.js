@@ -2,7 +2,7 @@ const express = require("express");
 const ejs = require('ejs');
 const path = require('path'); // native node module
 const multer  = require('multer');
-const _ = require('lodash');
+const { log } = require("console");
 
 const port = 3000;
 const date = require(__dirname + "/script/date.js");
@@ -38,21 +38,33 @@ const homeStartContent = {
     title: "Hi, welcome to Blaze!",
     content: "Your blog is empty at the moment. Share your unique, memorable experience today and immediately get 100 free flare points that you can accumulate and award to your favorite blog authors. Let's get blogging!"
 };
+const aboutContent = "Ablaze Blog is an online digital blogging platform where you can share your unique, memorable experience with your family, friends, and other people across the world.";
+const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 
 let blogName = "My Blog";
+const blogpostTitles = [];
+const blogpostPosts = [];
+const blogpostAuthors = [];
+const authorContactLinks = [];
+const blogpostDates = [];
+const blogpostIDs = [];
+const postImages = [];
+
 const authors = author.getAuthors();
 const blogposts = blog.getBlogposts();
 const userposts = [];
-// const combinedPosts = Array.prototype.push.apply(blogposts,userposts);
-// var combinedPosts = [...blogposts, ...userposts];
 
 // --------------- Home ---------------
 app.get("/", (req, res) => {
 
     res.render("home", { 
-        userposts: userposts,
         homeContent: homeStartContent, 
         blogposts: blogposts, 
+        blogpostPost: blogpostPosts, 
+        blogpostTitle: blogpostTitles, 
+        blogpostAuthor: blogpostAuthors, 
+        authorContactLink: authorContactLinks,
+        blogpostDate: blogpostDates,
         author: authors, 
     });
 
@@ -66,9 +78,12 @@ app.post("/", (req, res) => {
 app.get("/latest-blogs", (req, res) => {
 
     res.render("blogs", { 
-        userposts: userposts,
-        blogposts: blogposts, 
         homeContent: homeStartContent, 
+        blogposts: blogposts, 
+        blogpostPost: blogpostPosts, 
+        blogpostTitle: blogpostTitles, 
+        blogpostAuthor: blogpostAuthors, 
+        blogpostDate: blogpostDates 
     });
 
 });
@@ -77,67 +92,39 @@ app.get("/latest-blogs", (req, res) => {
 app.get("/favorite-authors", (req, res) => {
 
     res.render("authors", {
-        userposts: userposts,
         author: authors, 
+        blogpostPost: blogpostPosts
     });
 
 });
 
 // --------------- My Blog ---------------
-app.get("/myblog", (req, res) => {
+app.get("/my-blog", (req, res) => {
 
     console.log(userposts);
 
-    res.render("myblog", { 
+    res.render("my-blog", { 
         userposts: userposts,
         blogName: blogName, 
         homeContent: homeStartContent, 
+        blogposts: blogposts, 
+        blogpostPost: blogpostPosts, 
+        blogpostTitle: blogpostTitles, 
+        blogpostAuthor: blogpostAuthors, 
+        authorContactLink: authorContactLinks,
+        blogpostDate: blogpostDates,
+        blogpostID: blogpostIDs,
+        postImage: postImages
     });
 
 });
-
-// --------------- My Blog : Post ---------------
-app.get("/myblog/:postTitle", (req, res) => {
-    // res.send(req.params.postTitle)
-    // res.send(req.params)
-    
-    const requestedPostTitle = _.lowerCase(req.params.postTitle);
-
-    userposts.forEach(post => {
-
-        const existingPostTitle = _.lowerCase(post.title);
-
-        if (requestedPostTitle === existingPostTitle) {
-            // console.log("Match Found!");
-            // res.send("Match Found!");
-            res.render("mypost", { 
-                userposts: userposts,
-                title: post.title,
-                content: post.content,
-                image: post.image,
-                author: post.author,
-                authorLink: post.authorLink,
-                dateTime: post.autdateTimehor,
-                id: post.id
-            });
-        } 
-        // else {
-        //     res.render("404", { 
-        //         userposts: userposts,
-        //     });
-        // }
-        
-    });
-
-
-  })
 
 // --------------- New Blog ---------------
 app.get("/new-blog", (req, res) => {
 
     res.render("new-blog", { 
-        userposts: userposts,
         blogName: blogName, 
+        blogpostPost: blogpostPosts
     });
 
 });
@@ -149,7 +136,8 @@ app.post("/new-blog", (req, res) => {
     if (newBlogName == "My Blog") {
         // blogName.push(newBlogName);
         blogName = newBlogName;
-        res.redirect("/myblog");
+
+        res.redirect("/my-blog");
     }
 
     // ********** Node.js Image Upload Script **********
@@ -164,20 +152,48 @@ app.post("/new-blog", (req, res) => {
 
         } else {
 
+            // console.log(req.file);
+            // res.send('Post image was successfully uploaded!');
+
+            let newPostImage = req.file.filename;
+            postImages.push(newPostImage);
+            // res.redirect('/my-blog');
+
+            // let newBlogName = req.body.blogName;
+            let newBlogpostTitle = req.body.blogpostTitle.toLowerCase();
+            // let newBlogpostTitle = req.body.blogpostTitle;
+            let newBlogpostNow = req.body.blogpostText;
+            let newBlogpostAuthor = req.body.blogpostAuthor;
+            let newauthorContactLink = req.body.authorContactLink;
+            let newBlogpostDate = date.getDate();
+            let newBlogpostID = blogpostTitles.length + 1;
+
+            // console.log(newBlogpostNow);
+
+            blogpostTitles.push(newBlogpostTitle);
+            blogpostPosts.push(newBlogpostNow);
+            blogpostAuthors.push(newBlogpostAuthor);
+            blogpostDates.push(newBlogpostDate);
+            authorContactLinks.push(newauthorContactLink);
+            blogpostIDs.push(newBlogpostID);
+
+            // blogName.push(newBlogName);
+
+            // ********** New Solution (Blog post object) **********
             let newBlogpost = {
                 id: userposts.length + 1,
                 title: req.body.blogpostTitle.toLowerCase(),
-                overview: req.body.blogpostText.substring(0, 260),
                 content: req.body.blogpostText,
                 image: req.file.filename,
                 author: req.body.blogpostAuthor,
                 authorLink: req.body.authorContactLink,
                 dateTime: date.getDate(),
             }
-
+            
             userposts.push(newBlogpost);
 
-            res.redirect("/myblog");
+            res.redirect("/my-blog");
+            
         }
 
     });
@@ -189,20 +205,19 @@ app.post("/new-blog-name", (req, res) => {
     let newBlogName = req.body.blogName;
 
     if (newBlogName == "My Blog") {
+        
     } else {
         blogName = newBlogName;
     }
 
-    res.redirect("/myblog");
+    res.redirect("/my-blog");
 
 });
 
 // --------------- User Account ---------------
 app.get("/user-account", (req, res) => {
 
-    res.render("user-account", {         
-        userposts: userposts
-    });
+    res.render("user-account", { blogpostPost: blogpostPosts});
 
 });
 
@@ -210,8 +225,9 @@ app.get("/user-account", (req, res) => {
 app.get("/about", (req, res) => {
 
     res.render("about", { 
-        userposts: userposts
-    });
+        aboutContent: aboutContent,
+         blogpostPost: blogpostPosts
+        });
 
 });
 
@@ -219,7 +235,8 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
 
     res.render("contact", { 
-        userposts: userposts,
+        contactContent: contactContent, 
+        blogpostPost: blogpostPosts
     });
 
 });

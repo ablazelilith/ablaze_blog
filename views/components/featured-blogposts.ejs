@@ -15,7 +15,7 @@
                         <h3 class="blog-post-title"><%= blogposts[0].title %></h3>
                     </div>
                     <div class="blog-post-body">
-                        <p><%= blogposts[0].intro %></p>
+                        <p><%= blogposts[0].overview %></p>
                     </div>
                     <div class="blog-post-footer">
                         <p class="author">
@@ -35,7 +35,7 @@
                         <h3 class="blog-post-title"><%= blogposts[1].title %></h3>
                     </div>
                     <div class="blog-post-body">
-                        <p><%= blogposts[1].intro %></p>
+                        <p><%= blogposts[1].overview %></p>
                     </div>
                     <div class="blog-post-footer">
                         <p class="author">
@@ -55,13 +55,53 @@
                         <h3 class="blog-post-title"><%= blogposts[2].title %></h3>
                     </div>
                     <div class="blog-post-body">
-                        <p><%= blogposts[2].intro %></p>
+                        <p><%= blogposts[2].overview %></p>
                     </div>
                     <div class="blog-post-footer">
                         <p class="author">
                             <span class="by">By</span><a href="<%= blogposts[2].author.externalLink %>" class="author-link"><%= blogposts[2].author.name %></a>
                         </p>
                         <p class="date"><%= blogposts[2].time %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="blog-post popular-first">
+                <img src="blogs/<%= blogposts[6].hero %>" class="blog-post-image" alt="Blog post image">
+                <div class="blog-post-content">
+                    <div class="blog-post-header">
+                        <h3 class="blog-post-title"><%= blogposts[6].title %></h3>
+                    </div>
+                    <div class="blog-post-body">
+                        <p><%= blogposts[6].overview %></p>
+                    </div>
+                    <div class="blog-post-footer">
+                        <p class="author">
+                            <span class="by">By</span><a href="<%= blogposts[6].author.externalLink %>" class="author-link"><%= blogposts[6].author.name %></a>
+                        </p>
+                        <p class="date"><%= blogposts[6].time %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="blog-post popular-first">
+                <img src="blogs/<%= blogposts[7].hero %>" class="blog-post-image" alt="Blog post image">
+                <div class="blog-post-content">
+                    <div class="blog-post-header">
+                        <h3 class="blog-post-title"><%= blogposts[7].title %></h3>
+                    </div>
+                    <div class="blog-post-body">
+                        <p><%= blogposts[7].overview %></p>
+                    </div>
+                    <div class="blog-post-footer">
+                        <p class="author">
+                            <span class="by">By</span><a href="<%= blogposts[7].author.externalLink %>" class="author-link"><%= blogposts[7].author.name %></a>
+                        </p>
+                        <p class="date"><%= blogposts[7].time %></p>
                     </div>
                 </div>
             </div>

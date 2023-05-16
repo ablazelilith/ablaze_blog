@@ -1,0 +1,36 @@
+.single-post {
+    background-color: white;
+    border-radius: 28px;
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.2);
+    padding: 9px;
+}
+
+.single-post-img-cover {
+    width: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.single-post-content-wrap {
+    padding: 0 20px;
+}
+
+.single-post-content {
+    width: 55%;
+    width: 100%;
+    padding: 32px 27px 23px;
+} 
+
+.single-post-img {
+    width: 65%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom: 0;
+}
+
+.single-post .blog-post-header {
+    margin-bottom: 14px;
+}

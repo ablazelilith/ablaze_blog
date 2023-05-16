@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="page-header">
+    <h1 class="page-header-title"><%= title %></h1>
+</div>
+    
+<!-- <div class="page-container"> -->
+    <div class="single-post">
+        <!-- <div class="single-post-img-cover">
+            <img src="/uploads/<%= image %>" alt="<%= image %>" class="single-post-img">
+        </div> -->
+
+        <div class="single-post-img-cover">
+            <img src="/uploads/<%= image %>" alt="<%= image %>" class="single-post-img">
+        </div>
+        <div class="single-post-content">
+            <!-- <div class="single-post-content-wrap"> -->
+                <div class="blog-post-header">
+                    <h3 class="blog-post-title"><%= title %></h3>
+                </div>
+                <div class="blog-post-body">
+                    <p><%= content %></p>
+                </div>
+                <div class="blog-post-footer-wrap">
+                    <div class="blog-post-footer">
+                        <p class="author">
+                            <span class="by">By</span> 
+                                <a href="<%= authorLink %>" target="_blank" rel="noopener noreferrer" class="author-link"><%= author %></a>
+                        </p>
+                        <div class="date-and-blogpost-id">
+                            <p class="date"><%= dateTime %></p>
+                            <p class="blog-post-id">, <span>Post ID<span class="blog-post-id-text"><%= id %></span></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="single-post-img-cover">
+                    <img src="/uploads/<%= image %>" alt="<%= image %>" class="single-post-img">
+                </div> -->
+            <!-- </div> -->
+            
+        </div>
+    </div>
+<!-- </div> -->
+
+<%- include("partials/footer.ejs"); %>

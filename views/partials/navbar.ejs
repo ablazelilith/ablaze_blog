@@ -4,68 +4,65 @@
 
         <div class="blaze-brand">
             <a href="/" class="nav-home-link">
-                <img src="images/ablazelilith.png" class="blaze-nav-logo" alt="Ablaze Lilith Icon">
+                <img src="/images/ablazelilith.png" class="blaze-nav-logo" alt="Ablaze Lilith Icon">
                 <span class="navbar-brand-name">
                     <span class="blaze-brand-name">Blaze</span>
-                    <!-- <span class="nav-brand-separator">|</span> -->
-                    <!-- <span class="brand-desc">Blog About Anything</span> -->
                     <span class="brand-desc">Blog About Anything</span>
-                    <!-- <span class="brand-desc">Blog about anything</span> -->
                 </span>
             </a>
         </div>
 
         <div class="navbar-menu">
+
             <a href="/">
                 <div class="navbar-menu-item">
                     <i class="fa-solid fa-house"></i>
                     Home
                 </div>
             </a>
+
             <a href="/latest-blogs">
                 <div class="navbar-menu-item">
-                    <!-- <i class="fa-solid fa-book"></i> -->
                     <i class="fa-solid fa-book-bookmark"></i>
                     Blogs
                 </div>
             </a>
+
             <a href="/favorite-authors">
                 <div class="navbar-menu-item">
-                    <!-- <i class="fa-solid fa-feather-pointed"></i> -->
-                    <!-- <i class="fa-solid fa-fire"></i> -->
-                    <!-- <i class="fa-solid fa-star"></i> -->
-                    <!-- <i class="fa-solid fa-chess-queen"></i> -->
                     <i class="fa-solid fa-crown"></i>
                     Authors
                 </div>
             </a>
+
             <a href="" class="nav-menu-separator" class="ignored-nav-menu">
                 <div class="navbar-menu-item">|</div>
             </a>
-            <a href="/my-blog">
+
+            <a href="/myblog">
                 <div class="navbar-menu-item">
-                    <!-- <i class="fa-solid fa-bolt"></i> -->
                     <i class="fa-solid fa-fire"></i>
-                    <!-- <i class="fa-solid fa-feather-pointed"></i> -->
                     My Blog
                 </div>
             </a>
+
             <a href="/user-account">
                 <div class="navbar-menu-item">
-                    <!-- <i class="fa-regular fa-user"></i> -->
                     <i class="fa-solid fa-user"></i>
                     My Account
                 </div>
             </a>
+
             <a href="/new-blog" class="navbar-menu-item-btn-wrap">
                 <div class="navbar-menu-item button">
-                    <% if (blogpostPost.length === 0) { %> 
+                    <% if (userposts.length === 0) { %> 
                         Create Blog
                     <% } else { %>
                         New Post
                     <% } %>
                 </div>
             </a>
+
         </div>
 
     </div>

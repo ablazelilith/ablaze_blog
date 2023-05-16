@@ -17,6 +17,10 @@
     border-top: 1px dotted #b8b8b8;
 }
 
+.author-list:first-of-type {
+    border-top: none;
+}
+
 /* ===============* 🦄💜( AUTHOR CARD )💜🦄 *=============== */
 .author-card-list.platinum .card-row {
     display: flex;
